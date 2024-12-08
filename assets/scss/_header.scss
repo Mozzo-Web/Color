@@ -1,0 +1,767 @@
+/*----------------------------------------*/
+/*  02. Header
+/*----------------------------------------*/
+.header {
+    &-area {
+        @include breakpoint(max-md-device) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    &-container {
+        @include breakpoint(min-xxl-device) {
+            max-width: 1500px;
+        }
+        @include breakpoint(xl-device) {
+            max-width: 100%;
+        }
+    }
+    &-position-absolute {
+        @include breakpoint(min-lg-device) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+        }
+    }
+    &-logo {
+        display: block;
+    }
+    &-menu {
+        &-nav {
+            > ul {
+                > li {
+                    display: inline-block;
+                    &:not(:last-child) {
+                        margin-right: 65px;
+                        @include breakpoint(max-xl-device) {
+                            margin-right: 35px;
+                        }
+                        @include breakpoint(max-lg-device) {
+                            margin-right: 30px;
+                        }
+                    }
+                    > a {
+                        padding-top: 55px;
+                        padding-bottom: 55px;
+                    }
+                }
+                li {
+                    a {
+                        color: #3b4666;
+                        display: block;
+                        font-size: 18px;
+                    }
+                }
+            }
+            &.white-text {
+                * {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-drop {
+        &-holder {
+            position: relative;
+            &:hover {
+                .header {
+                    &-drop {
+                        &-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scaleY(1);
+                        }
+                    }
+                }
+            }
+        }
+        &-menu {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            background-color: $white;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            top: 100%;
+            left: 0;
+            transition: $baseTransition;
+            width: 250px;
+            padding-left: 30px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: left;
+            z-index: 3;
+            transform-origin: 0 0 0;
+            transform: scaleY(0);
+            opacity: 0;
+            visibility: hidden;
+            > li {
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+            display: inline-block;
+            &:not(:first-child) {
+                margin-left: 28px;
+                @include breakpoint(max-sm-device) {
+                    margin-left: 15px;
+                }
+            }
+            a {
+                font-weight: 500;
+                @include breakpoint(min-xl-device) {
+                    font-size: 18px;
+                }
+                @include breakpoint(max-xl-device) {
+                    font-size: 15px;
+                }
+            }
+            i {
+                @include breakpoint(max-sm-device) {
+                    font-size: 25px;
+                    color: #212529;
+                }
+            }
+            button {
+                outline: none;
+                box-shadow: none;
+                border: 0;
+            }
+            .btn {
+                &-custom {
+                    &-size {
+                        @include breakpoint(max-xl-device) {
+                            width: 130px;
+                            height: 45px;
+                            line-height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-sticky {
+        &.is-active {
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+            background-color: $white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            .header {
+                &-menu {
+                    &-nav {
+                        > ul {
+                            > li {
+                                > a {
+                                    padding-top: 35px;
+                                    padding-bottom: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-style {
+        &-1 {
+            .header {
+                &-logo {
+                    @include breakpoint(xl-device) {
+                        max-width: 60%;
+                    }
+                }
+                &-menu {
+                    @include breakpoint(xl-device) {
+                        text-align: center;
+                    }
+                    @include breakpoint(lg-device) {
+                        text-align: center;
+                    }
+                    &-nav {
+                        ul {
+                            li {
+                                &:hover {
+                                    > a {
+                                        color: $extbot-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-drop {
+                    &-menu {
+                        a {
+                            &:hover {
+                                color: $extbot-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-2 {
+            .header {
+                &-menu {
+                    &-nav {
+                        > ul {
+                            > li {
+                                &:not(:last-child) {
+                                    @include breakpoint(min-xl-device) {
+                                        margin-right: 75px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-with-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    .header {
+                        &-right {
+                            margin-left: 115px;
+                            @include breakpoint(max-xl-device) {
+                                margin-left: 75px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:not([class*='is-active']) {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    > a {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-drop {
+                        &-menu {
+                            a {
+                                &:hover {
+                                    color: $extbot-primary-2;
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        li {
+                            a {
+                                @include breakpoint(min-lg-device) {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.sticky-img {
+                                display: none;
+                            }
+                            @include breakpoint(max-md-device) {
+                                &.sticky-img {
+                                    display: block;
+                                }
+                                &.primary-img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &[class*='is-active'] {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    &:hover {
+                                        > a {
+                                            color: $extbot-primary-2;
+                                        }
+                                    }
+                                    .header {
+                                        &-drop {
+                                            &-menu {
+                                                li {
+                                                    a {
+                                                        &:hover {
+                                                            color: $extbot-primary-2;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.onepage {
+                                &-nav {
+                                    ul {
+                                        li {
+                                            &.active {
+                                                a {
+                                                    color: $extbot-primary-2;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.primary-img {
+                                display: none;
+                            }
+                            &.sticky-img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-3 {
+            &:not([class*='is-active']) {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    > a {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-drop {
+                        &-menu {
+                            a {
+                                &:hover {
+                                    color: $extbot-primary-3;
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        li {
+                            a {
+                                @include breakpoint(min-lg-device) {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.sticky-img {
+                                display: none;
+                            }
+                            @include breakpoint(max-md-device) {
+                                &.sticky-img {
+                                    display: block;
+                                }
+                                &.primary-img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &[class*='is-active'] {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    &:hover {
+                                        > a {
+                                            color: $extbot-primary-3;
+                                        }
+                                    }
+                                    .header {
+                                        &-drop {
+                                            &-menu {
+                                                li {
+                                                    a {
+                                                        &:hover {
+                                                            color: $extbot-primary-3;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.onepage {
+                                &-nav {
+                                    ul {
+                                        li {
+                                            &.active {
+                                                a {
+                                                    color: $extbot-primary-3;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.primary-img {
+                                display: none;
+                            }
+                            &.sticky-img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-4 {
+            * {
+                font-family: $gordita-font;
+            }
+            &:not([class*='is-active']) {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    > a {
+                                        color: #500836;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-drop {
+                        &-menu {
+                            a {
+                                font-size: 16px;
+                                &:hover {
+                                    color: $extbot-primary-4;
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        li {
+                            a {
+                                @include breakpoint(min-lg-device) {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &[class*='is-active'] {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    &:hover {
+                                        > a {
+                                            color: $extbot-primary-4;
+                                        }
+                                    }
+                                    .header {
+                                        &-drop {
+                                            &-menu {
+                                                li {
+                                                    a {
+                                                        &:hover {
+                                                            color: $extbot-primary-4;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.onepage {
+                                &-nav {
+                                    ul {
+                                        li {
+                                            &.active {
+                                                a {
+                                                    color: $extbot-primary-4;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-drop {
+                        &-menu {
+                            li {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-5 {
+            &:not([class*='is-active']) {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    > a {
+                                        color: $white;
+                                        &:hover {
+                                            color: $extbot-primary-5;
+                                        }
+                                    }
+                                    &.active {
+                                        a {
+                                            color: $extbot-primary-5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-drop {
+                        &-menu {
+                            a {
+                                &:hover {
+                                    color: $extbot-primary-5;
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        li {
+                            a {
+                                @include breakpoint(min-md-device) {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.sticky-img {
+                                display: none;
+                            }
+                            @include breakpoint(max-md-device) {
+                                &.sticky-img {
+                                    display: block;
+                                }
+                                &.primary-img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &[class*='is-active'] {
+                .header {
+                    &-menu {
+                        &-nav {
+                            > ul {
+                                > li {
+                                    &:hover {
+                                        > a {
+                                            color: $extbot-primary-5;
+                                        }
+                                    }
+                                    .header {
+                                        &-drop {
+                                            &-menu {
+                                                li {
+                                                    a {
+                                                        &:hover {
+                                                            color: $extbot-primary-5;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.onepage {
+                                &-nav {
+                                    ul {
+                                        li {
+                                            &.active {
+                                                a {
+                                                    color: $extbot-primary-5;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-logo {
+                        img {
+                            &.primary-img {
+                                display: none;
+                            }
+                            &.sticky-img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-area {
+        &:not([class*='is-active']) {
+            .header {
+                &-drop {
+                    &-menu {
+                        top: calc(100% - 25px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Onepage Nav--- */
+.onepage {
+    &-nav {
+        > ul {
+            li {
+                &.active {
+                    a {
+                        color: $extbot-primary;
+                    }
+                }
+            }
+        }
+    }
+    &-offcanvas {
+        &-nav {
+            > ul {
+                > li {
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #eaeff4;
+                        padding-bottom: 15px;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        color: #3b4666;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &.active {
+                        a {
+                            color: $extbot-primary;
+                        }
+                    }
+                }
+                li {
+                    .dropdown {
+                        .btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0;
+                            border: 0;
+                            outline: 0;
+                            box-shadow: none;
+                            font-size: 18px;
+                            transition: $baseTransition;
+                            &:after {
+                                content: none;
+                            }
+                            &.show {
+                                i {
+                                    &:before {
+                                        content: '\eaa1';
+                                    }
+                                }
+                            }
+                        }
+                        &-menu {
+                            position: relative !important;
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 0;
+                            border: 0;
+                            transform: none !important;
+                            transition: $baseTransition;
+                            li {
+                                &:not(:last-child) {
+                                    padding-bottom: 10px;
+                                }
+                                a {
+                                    &.dropdown {
+                                        &-item {
+                                            padding: 0;
+                                            &:hover {
+                                                background-color: transparent;
+                                                color: $extbot-primary;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Setting Button--- */
+.setting {
+    &-body {
+        padding-top: 15px;
+        display: none;
+    }
+    &-item {
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}

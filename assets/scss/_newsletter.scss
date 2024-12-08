@@ -1,0 +1,310 @@
+/*----------------------------------------*/
+/* 14. Newsletter
+/*----------------------------------------*/
+.newsletter {
+    &-area {
+        &.style {
+            &-1 {
+                * {
+                    color: $white;
+                }
+                .newsletter {
+                    &-item {
+                        .inner-item {
+                            @include breakpoint(max-md-device) {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                            }
+                            .btn {
+                                &-custom {
+                                    &-size {
+                                        @include breakpoint(max-xs-device) {
+                                            line-height: 67px;
+                                        }
+                                    }
+                                }
+                                &-wrap {
+                                    @include breakpoint(max-xs-device) {
+                                        position: relative;
+                                        margin-top: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-form {
+                        @include breakpoint(max-xs-device) {
+                            width: 100%;
+                        }
+                        .input {
+                            &-field {
+                                @include breakpoint(max-sm-device) {
+                                    width: 100%;
+                                }
+                                @include breakpoint(max-xs-device) {
+                                    padding-right: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-2 {
+                margin-bottom: 140px;
+                .newsletter {
+                    &-item {
+                        .inner-item {
+                            @include breakpoint(max-md-device) {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                    &-title {
+                        color: #1f1927;
+                    }
+                    &-desc {
+                        color: #6f7872;
+                    }
+                    &-form {
+                        .input {
+                            &-field {
+                                border-color: rgb(227, 234, 229);
+                                background-color: transparent;
+                                color: #5f6762;
+                                @include breakpoint(max-sm-device) {
+                                    width: 100%;
+                                }
+                                @include breakpoint(max-xs-device) {
+                                    padding-right: 30px;
+                                }
+                            }
+                        }
+                        .btn {
+                            &-custom {
+                                &-size {
+                                    @include breakpoint(max-xs-device) {
+                                        line-height: 67px;
+                                    }
+                                }
+                            }
+                            &-wrap {
+                                @include breakpoint(max-xs-device) {
+                                    position: relative;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-3 {
+                padding-bottom: 140px;
+                .newsletter {
+                    &-bg {
+                        border-radius: 25px;
+                    }
+                    &-item {
+                        padding-top: 70px;
+                        padding-bottom: 55px;
+                        text-align: left;
+                        margin-left: 75px;
+                        @include breakpoint(max-sm-device) {
+                            text-align: center;
+                            margin-left: 0;
+                        }
+                        .inner-item {
+                            @include breakpoint(max-md-device) {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                    &-title {
+                        color: #500836;
+                    }
+                    &-form {
+                        .input {
+                            &-field {
+                                border: 2px solid #ecd1cc;
+                                background-color: #ffe4df;
+                                color: #534e4b;
+                                width: 570px;
+                                @include breakpoint(max-sm-device) {
+                                    width: 100%;
+                                }
+                                @include breakpoint(max-xs-device) {
+                                    padding-right: 35px;
+                                }
+                            }
+                        }
+                        .btn {
+                            &-custom {
+                                &-size {
+                                    @include breakpoint(max-xs-device) {
+                                        line-height: 67px;
+                                    }
+                                }
+                            }
+                            &-wrap {
+                                @include breakpoint(max-xs-device) {
+                                    position: relative;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-4 {
+                &.newsletter {
+                    &-space {
+                        &-y-axis {
+                            padding-top: 140px;
+                            padding-bottom: 140px;
+                        }
+                    }
+                }
+                * {
+                    color: $white;
+                }
+                .newsletter {
+                    &-item {
+                        .inner-item {
+                            @include breakpoint(max-sm-device) {
+                                width: calc(100% - 60px);
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            .btn {
+                                &-custom {
+                                    &-size {
+                                        @include breakpoint(max-xs-device) {
+                                            line-height: 67px;
+                                        }
+                                    }
+                                }
+                                &-wrap {
+                                    @include breakpoint(max-xs-device) {
+                                        position: relative;
+                                        margin-top: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-form {
+                        @include breakpoint(max-xs-device) {
+                            width: 100%;
+                        }
+                        .input {
+                            &-field {
+                                background-color: transparent;
+                                border-color: $white;
+                                width: 570px;
+                                @include breakpoint(max-sm-device) {
+                                    width: 100%;
+                                }
+                                @include breakpoint(max-xs-device) {
+                                    padding-right: 35px;
+                                }
+                            }
+                        }
+                        .btn {
+                            &-custom {
+                                &-size {
+                                    @include breakpoint(max-xs-device) {
+                                        line-height: 67px;
+                                    }
+                                }
+                            }
+                            &-wrap {
+                                @include breakpoint(max-xs-device) {
+                                    position: relative;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-item {
+        padding-top: 65px;
+        padding-bottom: 65px;
+        text-align: center;
+        border-radius: 25px;
+    }
+    &-title {
+        font-size: 55px;
+        line-height: 70px;
+        margin-bottom: 15px;
+        @include breakpoint(max-sm-device) {
+            font-size: 35px;
+            line-height: 50px;
+        }
+    }
+    &-desc {
+        font-size: 24px;
+        line-height: 42px;
+        margin-bottom: 30px;
+        @include breakpoint(max-xs-device) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    &-form {
+        display: inline-block;
+        position: relative;
+        .input {
+            &-field {
+                background-color: #fe8549;
+                border: 1px solid #fe8549;
+                border-radius: 20px;
+                color: #fefdfc;
+                font-size: 17px;
+                width: 630px;
+                height: 70px;
+                padding-left: 30px;
+                padding-right: 240px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .btn {
+            &-wrap {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+            }
+            &-custom {
+                &-size {
+                    border-radius: 20px;
+                    line-height: 1;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &-space {
+        &-top {
+            &-n140 {
+                margin-top: -140px;
+            }
+        }
+        &-n140 {
+            margin-bottom: -140px;
+        }
+    }
+}
+
+/* ---Mailchimp--- */
+.mailchimp {
+    &-submitting,
+    &-success,
+    &-error {
+        margin-top: 25px;
+    }
+}

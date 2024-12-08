@@ -1,0 +1,58 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Extbot - App Landing Bootstrap 5 Template
+    Version: 1.0
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    01. Template default CSS
+    02. Header
+    03. Hero
+    04. Navigation
+    05. Features
+    06. Partner
+    07. Banner
+    08. Pricing
+    09. Testimonial
+    10. Footer
+    11. Animation
+    12. Intro
+    13. Screen
+    14. Newsletter
+    15. Trial
+    16. FAQ
+    17. Breadcrumb
+    18. Blog
+    19. Form
+    20. Contact
+    21. 404
+
+-----------------------------------------------------------------------------------*/
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import 'mixins';
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'hero';
+@import 'navigation';
+@import 'feature';
+@import 'partner';
+@import 'banner';
+@import 'pricing';
+@import 'testimonial';
+@import 'footer';
+@import 'animation';
+@import 'intro';
+@import 'screen';
+@import 'newsletter';
+@import 'trial';
+@import 'faq';
+@import 'breadcrumb';
+@import 'blog';
+@import 'form';
+@import 'contact';
+@import '404';

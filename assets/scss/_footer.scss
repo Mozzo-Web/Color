@@ -1,0 +1,683 @@
+/*----------------------------------------*/
+/*  10. Footer
+/*----------------------------------------*/
+.footer {
+    &-container {
+        @include breakpoint(min-xxl-device) {
+            max-width: 1500px;
+        }
+        @include breakpoint(xl-device) {
+            max-width: 100%;
+        }
+    }
+    &-upper {
+        &-top {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            .footer {
+                &-logo {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &-top {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    &-logo {
+        margin-bottom: 55px;
+        display: block;
+    }
+    &-desc {
+        color: #57617b;
+        max-width: 295px;
+        font-size: 18px;
+        line-height: 35px;
+        margin-bottom: 50px;
+        @include breakpoint(max-md-device) {
+            max-width: 520px;
+        }
+    }
+    &-social {
+        &-link {
+            ul {
+                display: flex;
+                li {
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                    a {
+                        i {
+                            border: 2px solid rgb(227, 232, 241);
+                            transition: $baseTransition;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: #042659;
+                            font-size: 14px;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 59px;
+                            display: block;
+                            &:hover {
+                                background-color: $extbot-primary;
+                                border-color: $extbot-primary;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-list {
+        .title {
+            margin-bottom: 35px;
+            font-size: 30px;
+            @include breakpoint(max-lg-device) {
+                font-size: 27px;
+            }
+        }
+        ul {
+            li {
+                a {
+                    color: #57617b;
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 55px;
+                    &:hover {
+                        color: $extbot-primary;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include breakpoint(max-md-device) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            &.with {
+                &-border {
+                    &:before {
+                        background-color: rgb(232, 238, 244);
+                        opacity: 1;
+                        width: 100%;
+                        height: 2px;
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .btn {
+                &-group {
+                    @include breakpoint(max-xs-device) {
+                        flex-direction: column;
+                    }
+                    .title {
+                        margin-right: 30px;
+                        color: #57617b;
+                        font-weight: 500;
+                        font-size: 19px;
+                        align-self: center;
+                        @include breakpoint(max-xs-device) {
+                            margin-right: 0;
+                        }
+                    }
+                    a {
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                            @include breakpoint(max-xs-device) {
+                                margin-right: 0;
+                            }
+                        }
+                        @include breakpoint(max-xs-device) {
+                            width: 100%;
+                            margin-top: 20px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-copyright {
+        @include breakpoint(max-md-device) {
+            padding-top: 15px;
+            text-align: center;
+        }
+        span {
+            font-size: 18px;
+            i {
+                color: $extbot-primary;
+            }
+        }
+        &.white {
+            &-text {
+                span,
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-ps {
+        &-xl {
+            &-30 {
+                @include breakpoint(min-xl-device) {
+                    padding-left: 30px;
+                }
+            }
+            &-20 {
+                @include breakpoint(min-xl-device) {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    &-style {
+        &-2 {
+            &.footer {
+                &-space {
+                    &-140 {
+                        padding-top: 140px;
+                    }
+                }
+            }
+            .footer {
+                &-container {
+                    @include breakpoint(min-xxl-device) {
+                        max-width: 1350px;
+                    }
+                    @include breakpoint(xl-device) {
+                        max-width: 100%;
+                    }
+                }
+                &-top {
+                    padding-bottom: 95px;
+                }
+                &-item {
+                    @include breakpoint(max-md-device) {
+                        margin-top: 50px;
+                    }
+                    &-wrap {
+                        @include breakpoint(min-xxl-device) {
+                            --bs-gutter-x: 70px;
+                            [class*='col-'] {
+                                padding-left: 0;
+                            }
+                        }
+                        .footer {
+                            &-item {
+                                @include breakpoint(min-lg-device) {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-desc {
+                    color: #d8dadf;
+                }
+                &-list {
+                    .title {
+                        color: $white;
+                        @include breakpoint(max-xl-device) {
+                            font-size: 27px;
+                        }
+                    }
+                    ul {
+                        li {
+                            a {
+                                color: #d8dadf;
+                                &:hover {
+                                    color: $extbot-primary-2;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-social {
+                    &-link {
+                        li {
+                            a {
+                                i {
+                                    color: $white;
+                                    &:hover {
+                                        background-color: $extbot-primary-2;
+                                        border-color: $extbot-primary-2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-logo {
+                    margin-bottom: 0;
+                    @include breakpoint(max-md-device) {
+                        margin-right: 20px;
+                    }
+                    @include breakpoint(max-sm-device) {
+                        margin-bottom: 20px;
+                    }
+                }
+                &-bottom {
+                    &-item {
+                        &:before {
+                            opacity: 0.07;
+                            height: 1px;
+                        }
+                    }
+                }
+                &-copyright {
+                    span {
+                        a,
+                        i {
+                            color: $extbot-primary-2;
+                        }
+                    }
+                }
+            }
+        }
+        &-3 {
+            background-position: center;
+            position: relative;
+            .footer {
+                &-top {
+                    @include breakpoint(max-md-device) {
+                        padding-bottom: 0;
+                    }
+                    @include breakpoint(max-sm-device) {
+                        padding-top: 25px;
+                    }
+                }
+                &-item {
+                    @include breakpoint(max-md-device) {
+                        margin-top: 50px;
+                    }
+                }
+                &-list {
+                    .title {
+                        color: $white;
+                    }
+                    ul {
+                        li {
+                            a {
+                                color: #d8dadf;
+                                &:hover {
+                                    color: $extbot-primary-3;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-desc {
+                    color: #d8dadf;
+                }
+                &-social {
+                    &-link {
+                        ul {
+                            li {
+                                a {
+                                    i {
+                                        color: $white;
+                                        &:hover {
+                                            background-color: $extbot-primary-3;
+                                            border-color: $extbot-primary-3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-copyright {
+                    @include breakpoint(max-md-device) {
+                        margin-bottom: 20px;
+                    }
+                    a,
+                    i {
+                        color: $extbot-primary-3;
+                    }
+                }
+                &-inner {
+                    &-img {
+                        position: absolute;
+                        bottom: 90px;
+                        left: 60px;
+                        @include breakpoint(max-xl-device) {
+                            bottom: auto;
+                            top: 30px;
+                            left: 30px;
+                        }
+                        @include breakpoint(max-md-device) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-4 {
+            .footer {
+                &-upper {
+                    &-top {
+                        &-item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: relative;
+                            padding-bottom: 80px;
+                            @include breakpoint(md-device) {
+                                flex-wrap: wrap;
+                            }
+                            @include breakpoint(max-sm-device) {
+                                flex-direction: column;
+                            }
+                            &:before {
+                                background-color: $white;
+                                height: 1px;
+                                width: 100%;
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                opacity: 0.071;
+                            }
+                            .footer {
+                                &-logo {
+                                    @include breakpoint(max-sm-device) {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                                &-btn {
+                                    &-wrap {
+                                        align-items: center;
+                                        @include breakpoint(max-md-device) {
+                                            margin-top: 25px;
+                                        }
+                                        @include breakpoint(max-sm-device) {
+                                            text-align: center;
+                                        }
+                                        .title {
+                                            color: #d8dadf;
+                                            font-size: 19px;
+                                            margin-right: 15px;
+                                            text-align: center;
+                                        }
+                                        a {
+                                            @include breakpoint(max-sm-device) {
+                                                margin-top: 15px;
+                                                display: block;
+                                            }
+                                            &:not(:last-child) {
+                                                margin-right: 15px;
+                                                @include breakpoint(
+                                                    max-sm-device
+                                                ) {
+                                                    margin-right: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-top {
+                    padding-top: 100px;
+                    padding-bottom: 130px;
+                }
+                &-item {
+                    @include breakpoint(max-md-device) {
+                        margin-top: 50px;
+                    }
+                }
+                &-list {
+                    .title {
+                        color: $white;
+                    }
+                    ul {
+                        li {
+                            a {
+                                color: #d8dadf;
+                                font-size: 18px;
+                                &:hover {
+                                    color: $extbot-primary-4;
+                                }
+                            }
+                        }
+                    }
+                    &.contact {
+                        &-list {
+                            ul {
+                                li {
+                                    display: flex;
+                                    align-items: baseline;
+                                    i {
+                                        color: $extbot-primary-4;
+                                        margin-right: 15px;
+                                        width: 17px;
+                                    }
+                                    span {
+                                        color: #d8dadf;
+                                    }
+                                    a,
+                                    span {
+                                        width: calc(100% - 17px);
+                                        line-height: 45px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-desc {
+                    color: #d8dadf;
+                }
+                &-social {
+                    &-link {
+                        ul {
+                            li {
+                                a {
+                                    i {
+                                        color: $white;
+                                        &:hover {
+                                            background-color: $extbot-primary-4;
+                                            border-color: $extbot-primary-4;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-bottom {
+                    background-color: #480931;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    &-item {
+                        justify-content: center;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                &-copyright {
+                    a,
+                    i {
+                        color: $extbot-primary-4;
+                    }
+                }
+            }
+        }
+        &-5 {
+            background-color: #07114f;
+            .footer {
+                &-top {
+                    padding-top: 135px;
+                    padding-bottom: 90px;
+                }
+                &-item {
+                    margin-bottom: 30px;
+                }
+                &-list {
+                    .title {
+                        color: $white;
+                        @include breakpoint(lg-device) {
+                            font-size: 27px;
+                        }
+                    }
+                    ul {
+                        li {
+                            a {
+                                color: #d8dadf;
+                                font-size: 18px;
+                                &:hover {
+                                    color: $extbot-primary-4;
+                                }
+                            }
+                        }
+                    }
+                    &.contact {
+                        &-list {
+                            ul {
+                                li {
+                                    display: flex;
+                                    align-items: baseline;
+                                    i {
+                                        color: $extbot-primary-4;
+                                        margin-right: 15px;
+                                        width: 17px;
+                                    }
+                                    span {
+                                        color: #d8dadf;
+                                    }
+                                    a,
+                                    span {
+                                        width: calc(100% - 17px);
+                                        line-height: 45px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-desc {
+                    color: #d8dadf;
+                }
+                &-social {
+                    &-link {
+                        ul {
+                            li {
+                                a {
+                                    i {
+                                        color: $white;
+                                        &:hover {
+                                            background-color: $extbot-primary-5;
+                                            border-color: $extbot-primary-5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-upper {
+                    &-bottom {
+                        &-item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            background-color: #0e1a63;
+                            padding-top: 25px;
+                            padding-bottom: 25px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            border-radius: 20px;
+                            @include breakpoint(max-sm-device) {
+                                flex-direction: column;
+                            }
+                            .footer {
+                                &-logo {
+                                    margin-bottom: 0;
+                                    @include breakpoint(max-sm-device) {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                                &-btn {
+                                    &-wrap {
+                                        align-items: center;
+                                        .title {
+                                            color: #d8dadf;
+                                            font-size: 19px;
+                                            margin-right: 15px;
+                                        }
+                                        a {
+                                            &:not(:last-child) {
+                                                margin-right: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-scroll {
+                    &-top {
+                        @include breakpoint(max-sm-device) {
+                            margin-bottom: 15px;
+                        }
+                        i {
+                            background-color: $extbot-primary-5;
+                            border-radius: 50%;
+                            color: $white;
+                            width: 55px;
+                            height: 55px;
+                            line-height: 55px;
+                            display: block;
+                            text-align: center;
+                            transition: $baseTransition;
+                            &:hover {
+                                background-color: #1f1927;
+                            }
+                        }
+                    }
+                }
+                &-bottom {
+                    background-color: #07114f;
+                    padding-top: 35px;
+                    padding-bottom: 25px;
+                    &-item {
+                        justify-content: center;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                &-copyright {
+                    span {
+                        @include breakpoint(max-xxs-device) {
+                            font-size: 14px;
+                        }
+                    }
+                    a,
+                    i {
+                        color: $extbot-primary-5;
+                    }
+                }
+            }
+        }
+    }
+}

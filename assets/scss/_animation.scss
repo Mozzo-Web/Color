@@ -1,0 +1,79 @@
+/*----------------------------------------*/
+/*  11. Animation
+/*----------------------------------------*/
+/* ---Wave Button--- */
+@keyframes wave-button {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.wave-btn {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    > .icon {
+        background-color: $extbot-primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 24px;
+    }
+    span {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        &:nth-child(1) {
+            background-color: rgb(255, 255, 255);
+            animation: wave-button 2s infinite 0.1s linear backwards;
+        }
+        &:nth-child(2) {
+            background-color: rgb(255, 255, 255);
+            animation: wave-button 3s infinite 0.5s linear backwards;
+        }
+        &:nth-child(3) {
+            background-color: rgb(255, 255, 255);
+            animation: wave-button 4s infinite 1s linear backwards;
+        }
+    }
+    &.style {
+        &-2 {
+            > .icon {
+                background-color: $extbot-primary-2;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+            }
+        }
+    }
+    &.style {
+        &-3 {
+            > .icon {
+                background-color: $extbot-primary-3;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+            }
+        }
+    }
+}

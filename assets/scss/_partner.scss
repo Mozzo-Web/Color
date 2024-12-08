@@ -1,0 +1,159 @@
+/*----------------------------------------*/
+/*  06. Partner
+/*----------------------------------------*/
+.partner {
+    &-area {
+        &.with-background {
+            background-color: #f5f8fb;
+            padding-top: 105px;
+            padding-bottom: 140px;
+        }
+        .section {
+            &-style {
+                &-2 {
+                    padding-bottom: 65px;
+                }
+            }
+        }
+    }
+    &-container {
+        @include breakpoint(min-xxl-device) {
+            max-width: 1500px;
+        }
+        @include breakpoint(xl-device) {
+            max-width: 100%;
+        }
+    }
+    &-img {
+        border: 2px solid rgb(227, 232, 241);
+        transition: $baseTransition;
+        border-radius: 25px;
+        padding: 60px;
+        display: block;
+        @include breakpoint(max-md-device) {
+            padding: 30px;
+        }
+        &:hover {
+            border-color: $extbot-primary;
+        }
+    }
+    &-style {
+        &-2 {
+            padding-top: 155px;
+            padding-bottom: 155px;
+            .partner {
+                &-img {
+                    padding: 50px 60px;
+                    @include breakpoint(max-lg-device) {
+                        padding: 30px;
+                    }
+                    &:hover {
+                        border-color: $extbot-primary-2;
+                    }
+                }
+            }
+        }
+        &-3 {
+            padding-top: 0;
+            padding-bottom: 120px;
+            .section {
+                &-title {
+                    color: #1f1927;
+                    font-size: 55px;
+                    line-height: 70px;
+                    margin-bottom: 20px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    color: #6f7872;
+                }
+            }
+            .partner {
+                &-img {
+                    padding: 45px 60px;
+                    @include breakpoint(max-lg-device) {
+                        padding: 30px;
+                    }
+                    &:hover {
+                        border-color: $extbot-primary-3;
+                    }
+                }
+                &-pagination {
+                    margin-top: 90px;
+                    .swiper {
+                        &-pagination {
+                            &-bullet {
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-4 {
+            padding-top: 120px;
+            .section {
+                &-title {
+                    color: #500836;
+                    font-size: 55px;
+                    line-height: 70px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    color: #534e4b;
+                }
+            }
+            .partner {
+                &-img {
+                    padding: 50px 65px;
+                    @include breakpoint(max-lg-device) {
+                        padding: 30px;
+                    }
+                    &:hover {
+                        border-color: $extbot-primary-4;
+                    }
+                }
+            }
+        }
+        &-5 {
+            padding-top: 140px;
+            .partner {
+                &-slider {
+                    &-4 {
+                        .swiper {
+                            &-wrapper {
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+                &-img {
+                    transition: $baseTransition;
+                    border: 0;
+                    padding: 0;
+                    position: relative;
+                    &:hover {
+                        .primary-img {
+                            opacity: 0;
+                        }
+                        .secondary-img {
+                            opacity: 1;
+                        }
+                    }
+                    .secondary-img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+/*----------------------------------------*/
+/*  19. Form
+/*----------------------------------------*/
+
+.form {
+    .group {
+        &-input {
+            display: flex;
+        }
+    }
+    &-field {
+        width: 100%;
+        &[class*='form-field'] {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        .input-field,
+        .textarea-field {
+            background-color: #fafafa;
+            border: 1px solid #fafafa;
+            border-radius: 10px;
+            color: #52565b;
+            font-size: 15px;
+            padding: 25px;
+            width: 100%;
+            height: 55px;
+            &:focus {
+                background-color: transparent;
+                border-color: #efefef;
+            }
+        }
+        .textarea-field {
+            margin-top: 30px;
+            height: 285px;
+        }
+    }
+    &-btn {
+        font-family: $gordita-font;
+        background-color: #1a2c99;
+        border: 1px solid #1a2c99;
+        border-radius: 10px;
+        font-weight: 500;
+        width: 200px;
+        height: 60px;
+        line-height: 57px;
+        color: $white;
+        font-size: 14px;
+        &:hover {
+            background-color: $extbot-primary-5;
+            border-color: $extbot-primary-5;
+        }
+        i {
+            vertical-align: text-bottom;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        &-wrap {
+            display: flex;
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-area {
+        padding-top: 50px;
+    }
+    &-wrap {
+        @include breakpoint(min-lg-device) {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+    &-title {
+        color: #0a1e43;
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 35px;
+    }
+    &-style {
+        &-2 {
+            .form {
+                &-wrap {
+                    @include breakpoint(min-md-device) {
+                        padding-left: 115px;
+                        padding-right: 115px;
+                    }
+                }
+                &-field {
+                    margin-bottom: 20px;
+                    &[class*='form-field'] {
+                        &:not(:last-child) {
+                            margin-right: 0;
+                        }
+                    }
+                    .input-field,
+                    .textarea-field {
+                        border-color: #efefef;
+                        &:focus {
+                            background-color: transparent;
+                            border-color: #1c2fa7;
+                        }
+                    }
+                    .textarea-field {
+                        margin-top: 0;
+                    }
+                }
+                &-btn {
+                    background-color: $extbot-primary-5;
+                    border-color: $extbot-primary-5;
+                    &:hover {
+                        background-color: #1a2c99;
+                        border: 1px solid #1a2c99;
+                    }
+                    i {
+                        vertical-align: text-bottom;
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                    &-wrap {
+                        display: flex;
+                        align-items: flex-start;
+                        margin-top: 50px;
+                    }
+                }
+                &-messege {
+                    margin-top: 25px;
+                    margin-bottom: 0;
+                    &.error {
+                        color: red;
+                    }
+                    &.success {
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}

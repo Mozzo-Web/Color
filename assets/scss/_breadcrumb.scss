@@ -1,0 +1,53 @@
+/*----------------------------------------*/
+/*  17. Breadcrumb
+/*----------------------------------------*/
+.breadcrumb {
+    &-area {
+        background-color: #1d2f9c;
+    }
+    &-height {
+        height: 450px;
+        @include breakpoint(max-sm-device) {
+            background-position: bottom;
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &-title {
+        color: $white;
+        font-size: 52px;
+        line-height: 90px;
+        @include breakpoint(max-xxs-device) {
+            font-size: 40px;
+        }
+    }
+    &-list {
+        li {
+            display: inline-block;
+            &:not(:last-child) {
+                padding-right: 10px;
+                a {
+                    position: relative;
+                    &:after {
+                        content: '-';
+                        margin-left: 15px;
+                    }
+                }
+            }
+            a,
+            span {
+                color: $white;
+                font-size: 20px;
+                line-height: 45px;
+            }
+            span {
+                color: $extbot-primary-5;
+            }
+        }
+    }
+}

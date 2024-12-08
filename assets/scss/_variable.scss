@@ -1,0 +1,37 @@
+// default font - start
+// ==================================================
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+$body-font: 'Poppins', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+
+// restaurant home -
+// font-family: 'Playfair Display', serif;
+
+@font-face {
+	font-family: 'PWSignaturetwo';
+	src: url('../fonts/pw_signature_two/PWSignaturetwo.woff2') format('woff2'),
+	url('../fonts/pw_signature_two/PWSignaturetwo.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+// default font - end
+// ==================================================
+
+// default colors - start
+// ==================================================
+$default-color: #434343;
+$default-black: #000000;
+
+$deep-gray: #ededed;
+$light-gray: #f2f2f2;
+// default colors - end
+// ==================================================
+
+// transition - start
+// ==================================================
+$default-transition: all .3s ease-in-out;
+// transition - end
+// ==================================================

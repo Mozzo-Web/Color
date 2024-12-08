@@ -1,0 +1,583 @@
+/*----------------------------------------*/
+/*  07. Banner
+/*----------------------------------------*/
+.banner {
+    &-area {
+        padding-top: 140px;
+    }
+    &-container {
+        @include breakpoint(min-xxl-device) {
+            max-width: 1370px;
+        }
+        &-2 {
+            @include breakpoint(min-xxl-device) {
+                max-width: 1500px;
+            }
+            @include breakpoint(xl-device) {
+                max-width: 100%;
+            }
+        }
+    }
+    &-category {
+        font-family: $playfair-font;
+        font-weight: 700;
+        color: #f9b047;
+        font-size: 25px;
+        display: block;
+        margin-bottom: 25px;
+    }
+    &-title {
+        max-width: 520px;
+        font-size: 65px;
+        line-height: 80px;
+        margin-bottom: 40px;
+        @include breakpoint(max-lg-device) {
+            font-size: 35px;
+            line-height: 1.4;
+        }
+        @include breakpoint(max-sm-device) {
+            font-size: 32px;
+        }
+    }
+    &-desc {
+        max-width: 545px;
+        color: #57617b;
+        font-size: 25px;
+        line-height: 45px;
+        margin-bottom: 50px;
+        @include breakpoint(max-sm-device) {
+            font-size: 20px;
+        }
+    }
+    &-btn {
+        &-wrap {
+            .title {
+                color: $extbot-primary;
+                margin-bottom: 35px;
+            }
+            a {
+                display: inline-flex;
+                justify-content: center;
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+    &-common {
+        .banner {
+            &-content {
+                @include breakpoint(max-md-device) {
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+    &-content {
+        &.common {
+            &-style {
+                .banner {
+                    &-content {
+                        align-self: center;
+                    }
+                    &-category {
+                        color: #ff8144;
+                        font-size: 23px;
+                        line-height: 28px;
+                    }
+                    &-title {
+                        font-family: $gordita-font;
+                        color: #500836;
+                        font-size: 55px;
+                        line-height: 70px;
+                        max-width: 100%;
+                        @include breakpoint(max-sm-device) {
+                            font-size: 35px;
+                            line-height: 50px;
+                        }
+                    }
+                    &-desc {
+                        color: #534e4b;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }
+    &-style {
+        &-2 {
+            .banner {
+                &-img {
+                    display: flex;
+                    align-items: flex-end;
+                    .primary-img {
+                        @include breakpoint(lg-device) {
+                            max-width: 60%;
+                        }
+                        @include breakpoint(max-sm-device) {
+                            max-width: 60%;
+                        }
+                    }
+                }
+                &-inner {
+                    &-img {
+                        position: relative;
+                        top: -70px;
+                        left: -90px;
+                        .popup {
+                            &-btn {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+                &-title {
+                    max-width: 680px;
+                }
+            }
+        }
+        &-3 {
+            .banner {
+                &-container {
+                    @include breakpoint(min-xxl-device) {
+                        max-width: 1500px;
+                    }
+                    @include breakpoint(xl-device) {
+                        max-width: 100%;
+                    }
+                }
+                &-item {
+                    padding-top: 85px;
+                    padding-bottom: 100px;
+                    border-radius: 25px;
+                }
+                &-content {
+                    max-width: 750px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    @include breakpoint(max-sm-device) {
+                        max-width: 100%;
+                        width: calc(100% - 30px);
+                    }
+                    * {
+                        color: $white;
+                    }
+                }
+                &-title {
+                    max-width: 100%;
+                    font-size: 55px;
+                    line-height: 65px;
+                    margin-bottom: 25px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 1.4;
+                    }
+                    span {
+                        color: #ffba00;
+                    }
+                }
+                &-desc {
+                    max-width: 100%;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        &-4 {
+            .banner {
+                &-container {
+                    @include breakpoint(min-xxl-device) {
+                        max-width: 1360px;
+                    }
+                }
+                &-content {
+                    padding-left: 90px;
+                    align-self: center;
+                    @include breakpoint(max-md-device) {
+                        padding-left: 0;
+                        padding-top: 50px;
+                    }
+                    .btn {
+                        &-wrap {
+                            margin-top: 65px;
+                        }
+                    }
+                }
+                &-category {
+                    font-family: $roboto-font;
+                    color: $extbot-primary-2;
+                    font-size: 23px;
+                    line-height: 28px;
+                    font-weight: 500;
+                }
+                &-title {
+                    color: $extbot-heading-2;
+                    font-size: 55px;
+                    line-height: 70px;
+                    span {
+                        color: $extbot-primary-2;
+                    }
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                        max-width: 430px;
+                    }
+                }
+                &-desc {
+                    max-width: 100%;
+                    font-size: 25px;
+                    line-height: 40px;
+                    margin-bottom: 15px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        &-5 {
+            .banner {
+                &-bg {
+                    border-radius: 25px;
+                    height: 420px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    @include breakpoint(max-lg-device) {
+                        padding-left: 30px;
+                        padding-right: 0;
+                    }
+                    @include breakpoint(max-sm-device) {
+                        padding-top: 30px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-bottom: 30px;
+                        height: auto;
+                    }
+                }
+                &-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include breakpoint(max-sm-device) {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+                &-category {
+                    font-family: $roboto-font;
+                    font-weight: 500;
+                    color: #fe6a21;
+                    font-size: 23px;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                }
+                &-title {
+                    color: $extbot-heading-2;
+                    font-size: 55px;
+                    line-height: 70px;
+                    margin-bottom: 20px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                        max-width: 100%;
+                    }
+                    @include breakpoint(max-xxs-device) {
+                        font-size: 30px;
+                    }
+                }
+                &-desc {
+                    line-height: 42px;
+                    margin-bottom: 0;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 18px;
+                    }
+                }
+                &-btn {
+                    display: block;
+                    &[class*='banner-btn'] {
+                        &:not(:last-child) {
+                            margin-bottom: 30px;
+                            @include breakpoint(max-sm-device) {
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-6 {
+            .banner {
+                &-item {
+                    margin-top: -330px;
+                }
+                &-bg {
+                    height: 600px;
+                    @include breakpoint(max-lg-device) {
+                        background-position: center;
+                    }
+                }
+                &-img {
+                    .popup {
+                        &-btn {
+                            height: 100%;
+                            display: flex;
+                        }
+                    }
+                }
+                &-content {
+                    text-align: center;
+                    margin-top: 135px;
+                    margin-bottom: 225px;
+                }
+                &-category {
+                    color: $extbot-primary-3;
+                    font-family: $roboto-font;
+                    font-weight: 500;
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                &-title {
+                    color: #1f1927;
+                    max-width: 100%;
+                    font-size: 55px;
+                    line-height: 70px;
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                        margin-bottom: 20px;
+                    }
+                }
+                &-desc {
+                    color: #6f7872;
+                    margin-left: auto;
+                    margin-right: auto;
+                    line-height: 42px;
+                    max-width: 710px;
+                }
+                &-btn {
+                    &-wrap {
+                        a {
+                            &:not(:last-child) {
+                                margin-right: 25px;
+                                @include breakpoint(max-xxs-device) {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-7 {
+            padding-top: 0;
+            padding-bottom: 110px;
+            margin-top: -200px;
+            .banner {
+                &-img {
+                    padding-right: 30px;
+                }
+                &-category {
+                    color: $extbot-primary-3;
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                &-title {
+                    max-width: 615px;
+                    font-size: 55px;
+                    line-height: 70px;
+                    color: #1f1927;
+                    @include breakpoint(max-lg-device) {
+                        font-size: 40px;
+                        line-height: 60px;
+                    }
+                    @include breakpoint(max-sm-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    color: #6f7872;
+                    line-height: 42px;
+                }
+            }
+        }
+        &-8 {
+            padding-top: 0;
+            height: 635px;
+            background-position: center;
+            @include breakpoint(max-md-device) {
+                background-position: left;
+            }
+            .container {
+                height: 100%;
+                .row {
+                    height: 100%;
+                }
+            }
+        }
+        &-9 {
+            .banner {
+                &-img {
+                    border-radius: 25px;
+                    height: 670px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &-content {
+                    padding-left: 90px;
+                    @include breakpoint(max-lg-device) {
+                        padding-left: 30px;
+                    }
+                    @include breakpoint(max-md-device) {
+                        padding-top: 30px;
+                        padding-left: 0;
+                    }
+                }
+                &-category {
+                    font-family: $roboto-font;
+                    font-weight: 500;
+                }
+            }
+        }
+        &-10 {
+            .banner {
+                &-content {
+                    padding-left: 75px;
+                    @include breakpoint(max-xl-device) {
+                        padding-left: 25px;
+                    }
+                    @include breakpoint(max-md-device) {
+                        padding-top: 25px;
+                        padding-left: 0;
+                    }
+                }
+                &-category {
+                    font-family: $roboto-font;
+                    font-weight: 500;
+                    color: #f0582e;
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                &-title {
+                    color: #07135b;
+                    font-size: 55px;
+                    line-height: 70px;
+                    max-width: 100%;
+                    @include breakpoint(max-lg-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    color: #4a4b51;
+                    max-width: 100%;
+                    font-size: 24px;
+                    line-height: 42px;
+                    margin-bottom: 20px;
+                    @include breakpoint(max-lg-device) {
+                        font-size: 20px;
+                    }
+                }
+                &-btn {
+                    &-wrap {
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+        &-11 {
+            background-color: #f4f5ff;
+            padding-top: 135px;
+            padding-bottom: 140px;
+            .banner {
+                &-category {
+                    font-family: $roboto-font;
+                    font-weight: 500;
+                    color: #f0582e;
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                &-title {
+                    color: #07135b;
+                    font-size: 55px;
+                    line-height: 70px;
+                    max-width: 100%;
+                    margin-bottom: 25px;
+                    @include breakpoint(max-lg-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    color: #4a4b51;
+                    max-width: 580px;
+                    font-size: 24px;
+                    line-height: 42px;
+                    margin-bottom: 40px;
+                    @include breakpoint(max-lg-device) {
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
+                &-img {
+                    position: relative;
+                    padding-left: 45px;
+                    z-index: 1;
+                    left: -45px;
+                    @include breakpoint(max-md-device) {
+                        margin-top: 50px;
+                    }
+                }
+                &-sticker {
+                    border-radius: 50%;
+                    width: 179px;
+                    height: 179px;
+                    &-wrap {
+                        &.style {
+                            &-1 {
+                                position: absolute;
+                                top: -55px;
+                                right: -45px;
+                                z-index: -1;
+                                @include breakpoint(max-sm-device) {
+                                    display: none;
+                                }
+                                .banner {
+                                    &-sticker {
+                                        background-color: $extbot-primary-5;
+                                    }
+                                }
+                            }
+                            &-2 {
+                                position: absolute;
+                                bottom: -40px;
+                                left: -25px;
+                                z-index: -1;
+                                @include breakpoint(max-lg-device) {
+                                    left: 0;
+                                }
+                                @include breakpoint(max-sm-device) {
+                                    display: none;
+                                }
+                                .banner {
+                                    &-sticker {
+                                        background-color: #1a2c99;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

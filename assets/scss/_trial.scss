@@ -1,0 +1,75 @@
+/*----------------------------------------*/
+/*  15. Trial
+/*----------------------------------------*/
+.trial {
+    &-style {
+        &-1 {
+            padding-top: 115px;
+            padding-bottom: 140px;
+        }
+        &-2 {
+            padding-top: 135px;
+            padding-bottom: 140px;
+            .trial {
+                &-category {
+                    color: #f0582e;
+                }
+                &-title {
+                    color: #07135b;
+                }
+                &-desc {
+                    color: #4a4b51;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+    &-item {
+        text-align: center;
+    }
+    &-category {
+        color: $extbot-primary-4;
+        margin-bottom: 25px;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 28px;
+        display: block;
+    }
+    &-title {
+        color: #500836;
+        font-size: 55px;
+        line-height: 70px;
+        margin-bottom: 30px;
+        @include breakpoint(max-md-device) {
+            font-size: 35px;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    &-desc {
+        color: #534e4b;
+        font-size: 25px;
+        line-height: 42px;
+        max-width: 710px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        @include breakpoint(max-sm-device) {
+            font-size: 20px;
+        }
+    }
+    &-btn {
+        &-wrap {
+            a {
+                &:not(:last-child) {
+                    margin-right: 25px;
+                    @include breakpoint(max-xxs-device) {
+                        margin-bottom: 15px;
+                        margin-right: 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

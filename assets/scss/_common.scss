@@ -1,0 +1,475 @@
+/*----------------------------------------*/
+/*  01. Template default CSS
+/*----------------------------------------*/
+
+/*-- Common Style --*/
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: $roboto-font;
+    color: $extbot-secondary;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        color: $extbot-primary;
+    }
+}
+a,
+button,
+.btn,
+img,
+input {
+    transition: $baseTransition;
+}
+a,
+button,
+.btn,
+input,
+select,
+textarea,
+.swiper-slide,
+.swiper-button-next,
+.swiper-button-prev {
+    &:focus {
+        text-decoration: none;
+        box-shadow: none;
+        outline: 0;
+    }
+}
+button {
+    outline: none !important;
+    border: 0 !important;
+    &:focus:not(:focus-visible) {
+        box-shadow: none;
+        outline: 0;
+        border: 0;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $gordita-font;
+    color: $extbot-heading;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+}
+.img-full {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+}
+::selection {
+    background-color: $extbot-primary;
+    color: $white;
+}
+
+/* ---Custom Container--- */
+.container {
+    @include breakpoint(min-xxl-device) {
+        --bs-gutter-x: 15px;
+        max-width: 1200px;
+        .row {
+            --bs-gutter-x: 30px;
+        }
+    }
+}
+
+/* ---Playfair Font--- */
+.playfair-font {
+    font-family: $playfair-font;
+    font-weight: 700;
+}
+
+/* ---HTML Text Color--- */
+.heading-color-2 {
+    * {
+        color: $extbot-heading-2;
+    }
+}
+
+/* ---Data Background Image--- */
+[data-bg-image] {
+    background-repeat: no-repeat;
+    background-color: $white;
+    background-size: cover;
+}
+
+/* ---Additional Margin | Padding--- */
+.mt {
+    &-20 {
+        margin-top: 20px;
+    }
+    &-30 {
+        margin-top: 30px;
+    }
+}
+
+/* ---Section Title--- */
+.section {
+    &-area {
+        text-align: center;
+    }
+    &-title {
+        font-size: 70px;
+        line-height: 100px;
+        @include breakpoint(max-md-device) {
+            font-size: 50px;
+            line-height: 1.4;
+        }
+        @include breakpoint(max-sm-device) {
+            font-size: 35px;
+        }
+    }
+    &-desc {
+        color: #57617b;
+        font-size: 25px;
+        line-height: 42px;
+        max-width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        @include breakpoint(max-md-device) {
+            font-size: 22px;
+            line-height: 1.5;
+        }
+        @include breakpoint(max-sm-device) {
+            font-size: 20px;
+        }
+    }
+    &-style {
+        &-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(max-xs-device) {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .section {
+                &-title {
+                    @include breakpoint(max-xs-device) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            @include breakpoint(max-sm-device) {
+                flex-direction: column;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .section {
+                &-title {
+                    font-size: 55px;
+                    line-height: 70px;
+                    @include breakpoint(max-md-device) {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                }
+                &-desc {
+                    margin-bottom: 0;
+                    @include breakpoint(max-md-device) {
+                        max-width: 440px;
+                        font-size: 20px;
+                        margin-left: 0;
+                    }
+                }
+                &-wrap {
+                    margin-bottom: 90px;
+                    @include breakpoint(max-sm-device) {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Custom Button Size--- */
+.btn {
+    border: 0;
+    &-custom-size {
+        background-color: $extbot-primary;
+        font-family: $gordita-font;
+        border-radius: 25px;
+        color: $white;
+        padding: 0;
+        width: 210px;
+        height: 70px;
+        line-height: 67px;
+        &.roboto-font {
+            font-family: $roboto-font;
+        }
+    }
+    &-md {
+        width: 150px;
+        height: 65px;
+        line-height: 62px;
+    }
+    &-lg {
+        width: 230px;
+        height: 70px;
+        line-height: 67px;
+        font-size: 19px;
+    }
+    &.sapphire-color.btn {
+        background-color: #042659;
+        color: $white;
+        i {
+            transition: $baseTransition;
+            color: #f9b047;
+            font-size: 20px;
+        }
+    }
+    &.paua-color {
+        background-color: #2f2b54;
+        color: $white;
+        i {
+            transition: $baseTransition;
+            color: $extbot-primary-2;
+            font-size: 20px;
+        }
+    }
+    &.blackcurrant-color {
+        background-color: #1f1927;
+        color: $white;
+    }
+    &.blackberry-color {
+        background-color: #500836;
+        color: $white;
+    }
+    &.blue-color {
+        background-color: #1a2c99;
+        color: $white;
+    }
+    &.extbot {
+        &-primary {
+            &-2 {
+                background-color: $extbot-primary-2;
+            }
+            &-3 {
+                background-color: $extbot-primary-3;
+            }
+            &-4 {
+                background-color: $extbot-primary-4;
+            }
+            &-5 {
+                background-color: $extbot-primary-5;
+                color: $white;
+            }
+            &-hover {
+                &:hover {
+                    background-color: $extbot-primary;
+                    color: $white;
+                    i {
+                        color: $white;
+                    }
+                }
+                &-2 {
+                    &:hover {
+                        background-color: $extbot-primary-2;
+                        color: $white;
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+                &-3 {
+                    &:hover {
+                        background-color: $extbot-primary-3;
+                        color: $white;
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+                &-4 {
+                    &:hover {
+                        background-color: $extbot-primary-4;
+                        color: $white;
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sapphire-hover {
+        &:hover {
+            background-color: #042659;
+            color: $white;
+        }
+    }
+    &.blackcurrant-hover {
+        &:hover {
+            background-color: #1f1927;
+            color: $white;
+        }
+    }
+    &.blue-hover {
+        &:hover {
+            background-color: #1a2c99;
+            color: $white;
+        }
+    }
+    &-outline {
+        background-color: rgb(245, 248, 251);
+        border: 2px solid rgb(227, 232, 241);
+        border-radius: 25px;
+        color: #042659;
+        font-weight: 500;
+        font-size: 19px;
+    }
+}
+
+/* ---Pagination--- */
+.pagination {
+    justify-content: center;
+    &-area {
+        margin-top: 75px;
+    }
+    li {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    .page {
+        &-link {
+            background-color: #f5f4fb;
+            font-family: $gordita-font;
+            border-color: #f5f4fb;
+            border-radius: 15px;
+            padding: 0;
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            color: #07135b;
+            font-weight: 500;
+            &:hover {
+                background-color: #5138ee;
+                color: $white;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        &-item {
+            &:first-child,
+            &:last-child {
+                .page {
+                    &-link {
+                        border-radius: 15px;
+                    }
+                }
+            }
+            &.active {
+                .page {
+                    &-link {
+                        background-color: #5138ee;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Global Overlay--- */
+.global-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: $baseTransition;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    visibility: hidden;
+    &.overlay-open {
+        visibility: visible;
+        cursor: pointer;
+    }
+}
+
+/*-- Scroll To Top --*/
+.scroll-to-top {
+    background-color: black;
+    border-radius: 4px;
+    color: $white;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeOutDown 1s normal;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        animation: fadeInUp 1s normal;
+    }
+    i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        transition: $baseTransition;
+        color: $white;
+        display: inline-block;
+    }
+    &.style {
+        &-1 {
+            &:hover {
+                background-color: $extbot-primary;
+            }
+        }
+        &-2 {
+            &:hover {
+                background-color: $extbot-primary-2;
+            }
+        }
+        &-3 {
+            &:hover {
+                background-color: $extbot-primary-3;
+            }
+        }
+        &-4 {
+            &:hover {
+                background-color: $extbot-primary-4;
+            }
+        }
+        &-5 {
+            &:hover {
+                background-color: $extbot-primary-5;
+            }
+        }
+    }
+}

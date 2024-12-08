@@ -1,0 +1,164 @@
+/*----------------------------------------*/
+/*  20. Contact
+/*----------------------------------------*/
+.contact {
+    &-map {
+        padding-top: 140px;
+        &-size {
+            height: 500px;
+            width: 100%;
+        }
+    }
+    &-sidebar {
+        @include breakpoint(min-lg-device) {
+            padding-left: 40px;
+        }
+        .inner {
+            &-img {
+                position: relative;
+            }
+        }
+        &-banner {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            padding: 30px;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                .sidebar {
+                    &-btn {
+                        background-color: $extbot-primary-5;
+                    }
+                }
+            }
+        }
+        .sidebar {
+            &-btn {
+                background-color: #1c2fa7;
+                border-radius: 10px;
+                width: 215px;
+                height: 50px;
+                line-height: 49px;
+                font-size: 18px;
+                display: block;
+                text-align: center;
+                color: $white;
+                position: relative;
+                &:after {
+                    background-color: #ededed;
+                    width: calc(100% + 5px);
+                    height: calc(100% + 5px);
+                    border-radius: 10px;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    opacity: 0.3;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                }
+                &-wrap {
+                    transform: translateX(-50%);
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                }
+            }
+        }
+        &-info {
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            padding-top: 30px;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 30px;
+            margin-top: 20px;
+            .contact {
+                &-info {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        transition: $baseTransition;
+                        &:hover {
+                            .contact {
+                                &-icon {
+                                    background-color: #5138ee;
+                                    img {
+                                        filter: brightness(0) invert(1);
+                                    }
+                                }
+                            }
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                        a,
+                        span {
+                            font-family: $gordita-font;
+                            color: #52565b;
+                            font-size: 13px;
+                            line-height: 28px;
+                        }
+                        a {
+                            &:hover {
+                                color: #5138ee;
+                            }
+                        }
+                    }
+                }
+                &-icon {
+                    background-color: #f4f4f4;
+                    border-radius: 10px;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    margin-right: 15px;
+                    transition: $baseTransition;
+                    img {
+                        transition: $baseTransition;
+                    }
+                }
+            }
+            .social {
+                &-link {
+                    margin-top: 20px;
+                }
+                &-title {
+                    margin-bottom: 15px;
+                    color: #22262a;
+                    font-size: 18px;
+                }
+                &-list {
+                    display: flex;
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                        a {
+                            background-color: #f4f4f4;
+                            border-radius: 10px;
+                            width: 45px;
+                            height: 45px;
+                            line-height: 45px;
+                            text-align: center;
+                            display: block;
+                            transition: $baseTransition;
+                            &:hover {
+                                background-color: #5138ee;
+                                i {
+                                    color: $white;
+                                }
+                            }
+                            i {
+                                color: #22262a;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

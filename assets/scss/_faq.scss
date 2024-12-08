@@ -1,0 +1,132 @@
+/*----------------------------------------*/
+/*  16. FAQ
+/*----------------------------------------*/
+.faq {
+    &-style {
+        &-common {
+            .section {
+                &-title {
+                    font-size: 55px;
+                    line-height: 70px;
+                    @include breakpoint(max-md-device) {
+                        font-size: 40px;
+                    }
+                    @include breakpoint(max-xs-device) {
+                        font-size: 30px;
+                    }
+                }
+                &-desc {
+                    line-height: 42px;
+                }
+            }
+            .faq {
+                &-item {
+                    border-radius: 30px;
+                    padding-top: 35px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-bottom: 25px;
+                    margin-bottom: 30px;
+                    transition: $baseTransition;
+                    @include breakpoint(max-xs-device) {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    &:hover {
+                        .faq {
+                            &-title {
+                                color: $white;
+                            }
+                            &-desc {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &-title {
+                    margin-bottom: 25px;
+                    font-size: 26px;
+                    line-height: 1.4;
+                    @include breakpoint(max-xs-device) {
+                        font-size: 24px;
+                    }
+                }
+                &-desc {
+                    font-size: 18px;
+                    line-height: 32px;
+                    margin-bottom: 0;
+                }
+                &-group {
+                    &-desc {
+                        [class*='faq-desc'] {
+                            &:not(:last-child) {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                &-btn {
+                    &-wrap {
+                        padding-top: 70px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        &-1 {
+            padding-top: 125px;
+            padding-bottom: 140px;
+            .section {
+                &-title {
+                    color: #500836;
+                }
+                &-desc {
+                    color: #534e4b;
+                }
+            }
+            .faq {
+                &-item {
+                    border: 2px solid rgb(246, 241, 238);
+                    &:hover {
+                        border-color: $extbot-primary-4;
+                        background-color: $extbot-primary-4;
+                    }
+                }
+                &-title {
+                    color: #500836;
+                }
+                &-desc {
+                    color: #534e4b;
+                }
+            }
+        }
+        &-2 {
+            padding-top: 125px;
+            padding-bottom: 140px;
+            .section {
+                &-title {
+                    color: #07135b;
+                }
+                &-desc {
+                    color: #534e4b;
+                }
+            }
+            .faq {
+                &-item {
+                    border: 2px solid #f4f5ff;
+                    &:hover {
+                        border-color: #1a2c99;
+                        background-color: #1a2c99;
+                    }
+                }
+                &-title {
+                    color: #07135b;
+                }
+                &-desc {
+                    color: #534e4b;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2246 @@
+/* 22 - home page - start
+==================================================================================================== */
+
+/* all banner section default settings - start
+================================================== */
+.banner-section {
+	min-height: 100vh;
+	position: relative;
+	.title-text {
+		font-size: 48px;
+	}
+
+	.social-links-text {
+		> ul {
+			> li {
+				&:after {
+					background-color: #000000;
+				}
+			}
+		}
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.absolute-social-wrap {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		position: absolute;
+		.container-fluid {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+
+	.text-white {
+		h1,h2,h3,h4,h5,h6 {
+			color: #ffffff;
+		}
+	}
+
+	&.text-white {
+		.title-text {
+			color: #ffffff;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			color: #ffffff;
+		}
+
+		.btn-border {
+			line-height: 43px;
+			border: 2px solid #ffffff;
+		}
+
+		.social-links-text {
+			> ul {
+				> li {
+					&:after {
+						background-color: rgba(255, 255, 255, 0.6);
+					}
+				}
+			}
+		}
+	}
+}
+/* all banner section default settings - start
+================================================== */
+
+
+/* all slider section default settings - start
+================================================== */
+
+.slider-section {
+	position: relative;
+
+	.absolute-social-wrap {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: 1;
+		position: absolute;
+	}
+
+	.text-white {
+		h1,h2,h3,h4,h5,h6 {
+			color: #ffffff;
+		}
+	}
+
+	&.text-white {
+		.title-text {
+			color: #ffffff;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			color: #ffffff;
+		}
+	}
+}
+
+/* all slider section default settings - start
+================================================== */
+
+
+/* 22.01 - home agency default - start
+================================================== */
+
+/* slider section - start */
+.agency-default-carousel {
+	.owl-stage-outer {
+		padding-bottom: 210px;
+	}
+	.item {
+		min-height: 800px;
+		position: relative;
+		.absolute-social-wrap {
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			position: absolute;
+		}
+		&.bg-gray {
+			background-color: #eaeaea;
+		}
+
+		.slider-content {
+			padding-right: 60px;
+		}
+		.item-title {
+			font-size: 48px;
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 16px;
+			margin-bottom: 60px;
+		}
+
+		.slider-image {
+			height: 800px;
+			position: relative;
+		}
+		.child-image {
+			opacity: 0;
+			max-width: 255px;
+			position: absolute;
+			transform: translateY(60px);
+			transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+			box-shadow: 8px 8px 50px 1px rgba(0, 0, 0, 0.1);
+			&.child-image-1 {
+				top: 160px;
+				right: -115px;
+			}
+			&.child-image-2 {
+				left: 0px;
+				bottom: 30px;
+			}
+			&.child-image-3 {
+				right: -235px;
+				bottom: -210px;
+			}
+		}
+	}
+
+	.owl-item.active {
+		.item {
+			.child-image {
+				opacity: 1;
+				transform: translateY(0px);
+				&.child-image-1 {
+					transition-delay: 1s;
+				}
+				&.child-image-2 {
+					transition-delay: 1.1s;
+				}
+				&.child-image-3 {
+					transition-delay: 1.2s;
+				}
+			}
+		}
+	}
+
+	.owl-dots {
+		top: 31%;
+		left: 60px;
+		position: absolute;
+		.owl-dot {
+			display: block;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			>span {
+				margin: 0px;
+				width: 30px;
+				height: 2px;
+				transform: scale(1);
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			&:hover {
+				background-color: $default-black;
+			}
+			&.active {
+				>span {
+					width: 60px;
+					transform: scale(1);
+					background-color: $default-black;
+				}
+			}
+		}
+	}
+
+	.owl-nav {
+		display: none;
+		background: red;
+		margin-top: 10px;
+	}
+}
+/* slider section - start */
+
+/* portfolio section - start */
+.home-agency-default {
+	.portfolio-section {
+		margin-top: -100px;
+	}
+}
+/* portfolio section - start */
+
+/* 22.01 - home agency default - end
+================================================== */
+
+
+/* 22.02 - home agency classic - start
+================================================== */
+
+/* slider section - start */
+.agency-classic-banner {
+	.banner-content {
+		z-index: 2;
+		text-align: right;
+		position: relative;
+	}
+	.title-text {
+		overflow: hidden;
+		span {
+			display: block;
+			font-weight: 300;
+			font-size: 128px;
+			line-height: 1.117;
+			font-family: $heading-font;
+			transition: $default-transition;
+		}
+	}
+	.btn {
+		transition: $default-transition;
+	}
+
+	.slider-image {
+		top: 0px;
+		right: 0px;
+		z-index: -1;
+		max-width: 1153px;
+		position: absolute;
+		transition: $default-transition;
+	}
+}
+/* slider section - end */
+
+/* slider section - start */
+.team-carousel {
+	&.arrow-top-right {
+		.owl-nav {
+			top: -70px;
+		}
+	}
+}
+/* slider section - end */
+
+/* slider section - start */
+.home-agency-classic {
+	.contact-section {
+		.google-map {
+			height: 420px;
+		}
+	}
+}
+/* slider section - end */
+
+/* 22.02 - home agency classic - end
+================================================== */
+
+
+/* 22.03 - home agency creative - start
+================================================== */
+
+/* banner section - start */
+.agency-creative-banner {
+	.banner-image {
+		float: right;
+		max-width: 350px;
+		margin-right: -10px;
+	}	
+}
+/* banner section - end */
+
+/* 22.03 - home agency creative - end
+================================================== */
+
+
+/* 22.04 - home studio agency - start
+================================================== */
+
+/* banner section - start */
+.agency-studio-banner {
+	min-height: 720px;
+}
+/* banner section - end */
+
+/* 22.04 - home studio agency - end
+================================================== */
+
+
+/* 22.05 - home - start
+================================================== */
+
+/* banner section - start */
+.agency-minimal-banner {
+	min-height: 800px;
+	padding: 60px 0px;
+	.title-text {
+		font-size: 198px;
+		font-weight: 200;
+		line-height: 0.874;
+	}
+	.social-links-text {
+		margin-top: 80px;
+	}
+}
+/* banner section - end */
+
+/* 22.05 - home - end
+================================================== */
+
+
+/* 22.06 - home agency startup - start
+================================================== */
+
+/* banner section - start */
+.agency-startup-banner {
+	min-height: 630px;
+	padding-bottom: 150px;
+	.title-text {
+		font-size: 60px;
+		font-weight: 500;
+	}
+	p {
+		max-width: 570px;
+		margin: 0px auto;
+	}
+}
+/* banner section - end */
+
+/* banner section - start */
+.agency-startup-grid {
+	margin: 0px;
+	.grid-item,
+	.grid-sizer {
+		float: left;
+		padding: 0px;
+		width: 33.333%;
+		display: inline-block;
+	}
+
+	.grid-item {
+		&.w-66 {
+			width: 66.666%;
+		}
+	}
+
+	.portfolio-fullimage {
+		margin: 0px;
+	}
+}
+/* banner section - end */
+
+/* 22.06 - home agency startup - end
+================================================== */
+
+
+/* 22.07 - home agency marketing - start
+================================================== */
+
+/* portfolio section - start */
+.agency-marketing-grid {
+	margin: -15px;
+	.grid-item,
+	.grid-sizer {
+		width: 25%;
+	}
+
+	.grid-item {
+		padding: 15px;
+		&.w-50 {
+			width: 50%;
+		}
+	}
+
+	.portfolio-fullimage {
+		width: 100%;
+		display: block;
+		&.has-content {
+			width: 100%;
+			height: 570px;
+			display: flex;
+			align-items: center;
+			.content-wrap {
+				width: 100%;
+				margin: auto;
+				padding: 50px;
+				display: block;
+				margin-top: 0px;
+				margin-left: 0px;
+				.item-title {
+					font-size: 54px;
+					font-weight: 300;
+				}
+
+				.signiture {
+					line-height: 1;
+					display: block;
+					font-size: 70px;
+					font-family: 'PWSignaturetwo';
+				}
+
+				hr {
+					height: 2px;
+					width: 60px;
+					border: none;
+					margin: 60px 0px;
+					display: inline-block;
+					background-color: #000000;
+				}
+			}
+		}
+
+		&.text-white {
+			&.has-content {
+				.content-wrap {
+					.item-title {
+						color: #ffffff;
+					}
+					hr {
+						background-color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+/* portfolio section - end */
+
+/* 22.07 - home agency marketing - end
+================================================== */
+
+
+/* 22.08 - home agency simple - start
+================================================== */
+/* empty */
+/* 22.08 - home agency simple - end
+================================================== */
+
+
+/* 22.09 - home photographer - start
+================================================== */
+
+/* home reset - start */
+.home-photographer {
+	padding: 60px;
+	padding-left: 375px;
+}
+/* home reset - end */
+
+/* 22.09 - home photographer - end
+================================================== */
+
+
+/* 22.10 - home freelancer - start
+================================================== */
+
+/* home reset - start */
+.home-freelancer {
+
+	.section-title {
+		margin-left: -115px;
+		.title-text {
+			font-size: 21px;
+			font-weight: 600;
+			position: relative;
+			padding-left: 115px;
+			&:before {
+				top: 12px;
+				left: 0px;
+				content: '';
+				height: 2px;
+				width: 70px;
+				position: absolute;
+				background-color: #000000;
+			}
+		}
+	}
+
+}
+/* home reset - end */
+
+/* banner section - start */
+.freelancer-banner {
+	min-height: auto;
+	&:before {
+		top: 50%;
+		right: -100px;
+		width: 2px;
+		content: '';
+		height: 67px;
+		position: absolute;
+		background-color: #000000;
+		transform: translateY(-50%);
+	}
+	.banner-content {
+		text-align: right;
+		h3 {
+			font-size: 21px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			font-family: $body-font;
+		}
+		h1 {
+			font-size: 42px;
+			font-weight: 600;
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
+/* banner section - end */
+
+/* 22.10 - home freelancer - end
+================================================== */
+
+
+/* 22.11 - home designer - start
+================================================== */
+
+/* banner section - start */
+.designer-banner {
+	background-size: auto;
+	background-position: right 263px center;
+	.banner-content {
+		h3 {
+			font-size: 21px;
+			font-weight: 500;
+			font-family: $body-font;
+		}
+		h1 {
+			font-size: 60px;
+			font-weight: 500;
+		}
+		h2 {
+			font-size: 32px;
+			font-weight: 500;
+		}
+	}
+}
+/* banner section - end */
+
+/* 22.11 - home designer - end
+================================================== */
+
+
+/* 22.12 - home personal - start
+================================================== */
+
+/* home reset - start */
+.home-personal {
+
+	.section-title {
+		.title-text {
+			position: relative;
+			padding-left: 200px;
+			&:before {
+				top: 18px;
+				left: 0px;
+				content: '';
+				height: 2px;
+				width: 170px;
+				position: absolute;
+				background-color: #000000;
+			}
+		}
+
+		&.size-increase {
+			.title-text {
+				&:before {
+					top: 24px;
+				}
+			}
+		}
+	}
+
+}
+/* home reset - end */
+
+/* banner section - start */
+.personal-banner {
+	min-height: 720px;
+	background-size: auto;
+	background-position: right top;
+	.banner-content {
+		padding-top: 60px;
+		position: relative;
+		&:before {
+			top: 0px;
+			left: 0px;
+			height: 2px;
+			width: 60px;
+			content: '';
+			position: absolute;
+			background-color: #ffffff;
+		}
+		h1 {
+			font-size: 102px;
+			font-weight: 600;
+		}
+		h2 {
+			font-size: 42px;
+			font-weight: 600;
+		}
+	}
+}
+/* banner section - end */
+
+/* portfolio section - start */
+.home-personal {
+	.portfolio-section {
+		.section-title {
+			.title-text {
+				padding: 0px;
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+/* portfolio section - end */
+
+/* 22.12 - home personal - end
+================================================== */
+
+
+/* 22.13 - home app landing - start
+================================================== */
+
+/* banner section - start */
+.app-landing-banner {
+	min-height: 820px;
+	background-size: auto;
+	background-position: left top;
+	.banner-content {
+		h1 {
+			font-size: 60px;
+			font-weight: 600;
+			margin-bottom: 80px;
+		}
+
+		.btns-group {
+			>ul {
+				>li {
+					margin-right: 30px;
+					&:last-child {
+						margin-right: 0px !important;
+					}
+				}
+			}
+		}
+	}
+}
+/* banner section - end */
+
+/* 22.13 - home app landing - end
+================================================== */
+
+
+/* 22.14 - home architecture - start
+================================================== */
+
+/* home reset - start */
+.home-architecture {
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 300;
+	}
+
+}
+/* home reset - end */
+
+/* slide section - start */
+.home-architecture {
+	.slide-section {
+		position: relative;
+		padding-left: 60px;
+		padding-right: 60px;
+		.social-links {
+			top: 50%;
+			right: 23px;
+			position: absolute;
+			display: inline-block;
+			transform: translateY(-50%);
+			>ul {
+				>li {
+					display: table;
+					margin: 0px;
+					text-align: center;
+					margin-bottom: 50px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.architecture-carousel {
+	position: relative;
+	.item {
+		min-height: 800px;
+		position: relative;
+		.item-content {
+			right: 0px;
+			bottom: 0px;
+			max-width: 770px;
+			padding: 55px 75px;
+			position: absolute;
+			background-color: #000000;
+			.item-title {
+				color: #ffffff;
+				font-size: 48px;
+			}
+		}
+	}
+
+	.owl-dots {
+		top: 50%;
+		left: -33px;
+		position: absolute;
+		transform: translateY(-50%);
+		.owl-dot {
+			display: table;
+			span {
+				margin: 8px 0px;
+			}
+		}
+	}
+}
+/* slide section - end */
+
+/* about section - start */
+.home-architecture {
+	.about-section {
+		.about-image {
+			width: 745px;
+			float: right;
+			&.creative-image {
+				float: none !important;
+				width: auto !important;
+			}
+		}
+	}
+}
+/* about section - end */
+
+/* blog section - start */
+.home-architecture {
+	.blog-grid {
+		.item-title {
+			>a {
+				font-weight: 700;
+			}
+		}
+	}
+}
+/* blog section - end */
+
+/* 22.14 - home section - end
+================================================== */
+
+
+/* 22.15 - home restaurant - start
+================================================== */
+
+/* home reset - start */
+.home-restaurant {
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'Playfair Display', serif;
+	}
+
+	.section-title {
+		.title-text {
+			font-size: 48px;
+			position: relative;
+			padding-bottom: 34px;
+			&:before {
+				left: 0px;
+				bottom: 0px;
+				content: '';
+				height: 2px;
+				width: 100px;
+				position: absolute;
+				background-color: #000000;
+			}
+		}
+
+		&.text-center {
+			.title-text {
+				&:before {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		&.size-decrease {
+			.title-text {
+				font-size: 32px;
+			}
+		}
+	}
+
+	.text-white {
+		.section-title {
+			.title-text {
+				&:before {
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+
+}
+/* home reset - end */
+
+/* slider section - start */
+.restaurant-carousel {
+	.item {
+		min-height: 100vh;
+		position: relative;
+	}
+	.icon {
+		max-width: 75px;
+		margin-bottom: 60px;
+		display: inline-block;
+	}
+	h3 {
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
+	p {
+		max-width: 530px;
+		display: inline-block;
+	}
+	.btn.btn-border.border-white {
+		height: 50px;
+		line-height: 46px;
+	}
+
+	.owl-dots {
+		top: 50%;
+		right: 60px;
+		margin: 0px;
+		position: absolute;
+		transform: translateY(-50%);
+		.owl-dot {
+			display: block;
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			span {
+				margin: 0px;
+				width: 7px;
+				height: 7px;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+			&:hover,
+			&.active {
+				span {
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+} 
+/* slider section - end */
+
+/* about section - start */
+.about-section {
+	.signiture-text {
+		display: block;
+		line-height: 1;
+		color: #000000;
+		font-size: 80px;
+		text-align: center;
+		font-family: 'PWSignaturetwo';
+	}
+}
+/* about section - end */
+
+/* food menu section - start */
+.foodmenu-section {
+
+	.food-menu-list {
+		>ul {
+			>li {
+				margin-right: 115px;
+				&:last-child {
+					margin-right: 0px !important;
+				}
+				>a {
+					color: #a5a5a5;
+					display: block;
+					font-size: 18px;
+					font-weight: 700;
+					padding: 14px 0px;
+					position: relative;
+					font-family: 'Playfair Display', serif;
+					&:after,
+					&:before {
+						width: 0%;
+						height: 2px;
+						opacity: 0;
+						content: '';
+						position: absolute;
+						background-color: #000000;
+						transition: $default-transition;
+					}
+					&:before {
+						top: 0px;
+						right: 0px;
+					}
+					&:after {
+						left: 0px;
+						bottom: 0px;
+					}
+
+					&:hover,
+					&.active {
+						color: #000000;
+						&:after,
+						&:before {
+							opacity: 1;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.items-list {
+		>ul {
+			>li {
+				margin-bottom: 40px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				} 
+				.title-wrap {
+					z-index: 1;
+					position: relative;
+					&:before {
+						left: 50%;
+						width: 90%;
+						height: 2px;
+						bottom: 2px;
+						content: '';
+						z-index: -1;
+						position: absolute;
+						transform: translateX(-50%);
+						border-bottom: 2px dotted $default-color;
+					}
+					.dish-name {
+						z-index: 1;
+						float: left;
+						line-height: 1;
+						color: #000000;
+						font-size: 16px;
+						font-weight: 600;
+						padding-right: 10px;
+						display: inline-block;
+						background-color: #ffffff;
+						font-family: $heading-font;
+						.item-label {
+							margin-left: 5px;
+						}
+					}
+					.dish-price {
+						z-index: 1;
+						float: right;
+						color: #000000;
+						line-height: 1;
+						font-size: 16px;
+						font-weight: 600;
+						padding-left: 10px;
+						background-color: #ffffff;
+					}
+				}
+				.item-label {
+					height: 16px;
+					color: #ffffff;
+					line-height: 1;
+					font-size: 10px;
+					padding: 0px 5px;
+					font-weight: 500;
+					line-height: 16px;
+					text-align: center;
+					display: inline-block;
+					background-color: #000000;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	&.text-white {
+		.food-menu-list {
+			>ul {
+				>li {
+					>a {
+						&:after,
+						&:before {
+							background-color: #ffffff;
+						}
+
+						&:hover,
+						&.active {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+
+		.items-list {
+			>ul {
+				>li {
+					margin-bottom: 40px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					} 
+					.title-wrap {
+						&:before {
+							border-bottom: 2px dotted #ffffff;
+						}
+						.dish-name {
+							color: #ffffff;
+							background-color: #000000;
+						}
+						.dish-price {
+							color: #ffffff;
+							background-color: #000000;
+						}
+					}
+					.item-label {
+						color: #000000;
+						background-color: #ffffff;
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			p {
+				color: #bbbbbb;
+			}
+		}
+	}
+
+}
+/* food menu section - end */
+
+/* booking section - start */
+.booking-section {
+	min-height: 480px;
+	.section-title {
+		.title-text {
+			font-size: 60px;
+			padding-bottom: 0px;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+/* booking section - end */
+
+/* contact section - start */
+.home-restaurant {
+	.contact-section {
+
+		.section-title {
+			.title-text {
+				padding-bottom: 0px;
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+	}
+}
+/* contact section - end */
+
+/* 22.15 - home restaurant - end
+================================================== */
+
+
+/* 22.16 - home hotel - start
+================================================== */
+
+/* home reset - start */
+.home-hotel {
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 700;
+		font-family: 'Playfair Display', serif;
+	}
+
+	.section-title {
+		.title-text {
+			font-size: 42px;
+		}
+	}
+
+}
+/* home reset - end */
+
+/* hotel carousel - start */
+.hotel-carousel {
+	.item {
+		min-height: 100vh;
+		position: relative;
+		.popup-video {
+			left: 19%;
+			bottom: 60px;
+			position: absolute;
+		}
+		.item-title {
+			font-size: 60px;
+		}
+	}
+
+	.owl-dots {
+		right: 19%;
+		bottom: 60px;
+		position: absolute;
+		.owl-dot {
+			span {
+				opacity: .4;
+				background: #ffffff;
+			}
+			&:hover,
+			&.active {
+				span {
+					opacity: 1;
+					background: #ffffff;
+				}
+			}
+		}
+	}
+}
+/* hotel carousel - end */
+
+/* hotel section - start */
+.hotel-section {
+	&.bg-gray {
+		background-color: #f2f2f2;
+	}
+}
+.hotel-list-layout {
+	.item-image {
+		width: 951px;
+		>img {
+			width: 100%;
+			display: block;
+		}
+		&.float-left {
+			margin-left: -15px;
+		}
+		&.float-right {
+			margin-right: -15px;
+		}
+	}
+
+	.about-service {
+		>ul {
+			>li {
+				margin-bottom: 50px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+		.service-icon {
+			float: left;
+			margin-top: 3px;
+			margin-right: 25px;
+			>img {
+				width: 45px;
+			}
+		}
+		.service-content {
+			display: table;
+			.service-title {
+				font-size: 21px;
+				font-weight: 600;
+				margin-bottom: 15px;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+}
+/* hotel section - end */
+
+/* property section - start */
+.property-carousel {
+	&.arrow-top-right {
+		.owl-nav {
+			top: -150px;
+		}
+	}
+}
+.property-grid {
+	.item-image {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+		&:before {
+			top: 50%;
+			left: 50%;
+			width: 0px;
+			z-index: 1;
+			height: 90%;
+			content: "";
+			position: absolute;
+			background-color: #000000;
+			transform: translate(-50%, -50%);
+			transition: all 0.3s ease-in-out;
+		}
+		&:after {
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+			opacity: 0;
+			color: #ffffff;
+			line-height: 1;
+			font-size: 14px;
+			font-weight: 500;
+			position: absolute;
+			letter-spacing: 3px;
+			content: "VIEW DETAILS";
+			font-family: $heading-font;
+			transform: translate(-50%, -30%);
+			transition: all 0.3s ease-in-out;
+			font-family: "Montserrat", sans-serif;
+		}
+	}
+	&:hover {
+		.item-image {
+			&:before {
+				width: 90%;
+			}
+			&:after {
+				opacity: 1;
+				transition-delay: 0.05s;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	.item-title {
+		font-size: 21px;
+	}
+}
+/* property section - end */
+
+/* blog section - start */
+.home-hotel {
+	.blog-grid {
+		.item-title {
+			>a {
+				font-size: 21px;
+				font-family: 'Playfair Display', serif;
+			}
+		}
+	}
+}
+/* blog section - end */
+
+/* 22.16 - home hotel - end
+================================================== */
+
+
+/* 22.17 - home events - start
+================================================== */
+
+/* banner section - start */
+.event-banner {
+	.title-text {
+		font-size: 90px;
+		font-weight: 500;
+	}
+	.countdown-timer {
+		>ul {
+			>li {
+				width: 120px;
+				text-align: center;
+				position: relative;
+				margin-right: 40px;
+				padding-right: 40px;
+				&:after {
+					top: 33.333%;
+					right: -5px;
+					opacity: .3;
+					content: '';
+					width: 10px;
+					height: 10px;
+					position: absolute;
+					border-radius: 100%;
+					background-color: #ffffff;
+				}
+				&:last-child {
+					margin-right: 0px !important;
+					padding-right: 0px !important;
+					&:after {
+						display: none;
+					}
+				}
+				strong,small {
+					color: #ffffff;
+					display: block;
+					line-height: 1;
+				}
+				strong {
+					font-size: 72px;
+					font-weight: 300;
+					margin-bottom: 10px;
+				}
+				small {
+					font-size: 18px;
+					font-weight: 500;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	.info-list {
+		left: 0px;
+		right: 0px;
+		bottom: 60px;
+		position: absolute;
+		>ul {
+			>li {
+				font-size: 14px;
+				font-weight: 500;
+				margin-bottom: 5px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+}
+/* banner section - end */
+
+/* 22.17 - home events - end
+================================================== */
+
+
+/* 22.18 - home decoration - start
+================================================== */
+
+/* home reset - start */
+.home-decoration {
+	padding-left: 60px;
+	padding-right: 60px;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 700;
+		font-family: 'Playfair Display', serif;
+	}
+
+}
+/* home reset - end */
+
+/* banner section - start */
+.decoration-banner {
+	min-height: 820px;
+}
+/* banner section - end */
+
+/* about section - end */
+.about-section {
+
+	.blockquote {
+		font-style: italic;
+		padding-top: 15px;
+		padding-left: 66px;
+		padding-bottom: 15px;
+		border-left: 8px solid #e9e9e9;
+		p {
+			font-size: 32px;
+			font-family: $heading-font;
+		}
+	}
+
+}
+
+.home-decoration {
+	.about-section {
+		.blockquote {
+			margin-left: 70px;
+			p {
+				color: #000000;
+				line-height: 1.3;
+				font-family: 'Playfair Display', serif;
+			}
+		}
+	}
+}
+/* about section - end */
+
+/* 22.18 - home decoration - end
+================================================== */
+
+
+/* 22.19 - home wedding - start
+================================================== */
+
+/* home reset - start */
+.home-wedding {
+	padding-left: 60px;
+	padding-right: 60px;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 700;
+		font-family: 'Playfair Display', serif;
+	}
+
+	.section-title {
+		.title-text {
+			font-size: 48px;
+		}
+	}
+
+}
+/* home reset - end */
+
+/* banner section - start */
+.wedding-banner {
+	.title-text {
+		line-height: 1;
+		font-size: 100px;
+	}
+	.sub-title {
+		line-height: 1;
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	.info-list {
+		>ul {
+			>li {
+				line-height: 1;
+				font-size: 32px;
+				margin-bottom: 15px;
+				font-family: 'Playfair Display', serif;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+}
+/* banner section - end */
+
+/* couple fullimage - start */
+.couple-fullimage {
+	overflow: hidden;
+	margin-top: 30px;
+	position: relative;
+	>img {
+		width: 100%;
+		display: block;
+	}
+	.couple-type {
+		left: 0px;
+		bottom: 0px;
+		color: #000000;
+		line-height: 1;
+		font-size: 32px;
+		font-weight: 700;
+		position: absolute;
+		padding: 15px 30px;
+		font-style: italic;
+		background-color: #ffffff;
+		font-family: 'Playfair Display', serif;
+	}
+}
+/* couple fullimage - end */
+
+/* lovestory section - start */
+.lovestory-section {
+
+	.lovestory-tab {
+		border-top: 3px solid #f2f2f2;
+		>ul {
+			width: 100%;
+			display: flex;
+			margin-top: -3px;
+			>li {
+				flex: 1;
+				text-align: center;
+				>a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					line-height: 1;
+					color: #000000;
+					font-size: 24px;
+					font-weight: 700;
+					padding-top: 33px;
+					position: relative;
+					font-family: 'Playfair Display', serif;
+					&:before {
+						top: 0px;
+						left: 15px;
+						right: 15px;
+						content: '';
+						height: 3px;
+						opacity: 0;
+						position: absolute;
+						background-color: #000000;
+						transition: $default-transition;
+					}
+
+					&:hover,
+					&.active {
+						&:before {
+							left: 0px;
+							right: 0px;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		.item-image {
+			z-index: 1;
+			position: relative;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			&:before {
+				top: 30px;
+				left: 30px;
+				right: -30px;
+				bottom: 0px;
+				z-index: -1;
+				content: '';
+				position: absolute;
+				background-color: #000000;
+			}
+		}
+
+		.item-content {
+			.item-title {
+				font-size: 48px;
+			}
+			.sub-title {
+				font-size: 28px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+/* lovestory section - end */
+
+/* booking section - start */
+.booking-section {
+	.btns-group {
+		>ul {
+			>li {
+				margin-right: 10px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+}
+/* booking section - end */
+
+/* memories section - start */
+.memories-images {
+	>ul {
+		width: 100%;
+		display: flex;
+		>li {
+			flex: 1;
+			>a {
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: relative;
+				&:before {
+					top: 50%;
+					left: 50%;
+					width: 0px;
+					z-index: 1;
+					height: 90%;
+					content: "";
+					position: absolute;
+					background-color: #000000;
+					transform: translate(-50%, -50%);
+					transition: all 0.3s ease-in-out;
+				}
+				&:after {
+					top: 50%;
+					left: 50%;
+					z-index: 2;
+					opacity: 0;
+					color: #ffffff;
+					font-size: 30px;
+					content: "\f31e";
+					font-weight: 400;
+					position: absolute;
+					transform: translate(-50%, -30%);
+					transition: all 0.3s ease-in-out;
+					font-family: "Font Awesome 5 Pro";
+				}
+
+				&:hover {
+					&:before {
+						width: 90%;
+					}
+					&:after {
+						opacity: 1;
+						transition-delay: 0.05s;
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+	}
+}
+/* memories section - end */
+
+/* service section - start */
+.home-wedding {
+	.service-default {
+		.serial-number {
+			color: #000000;
+			font-weight: 500;
+			margin-bottom: 20px;
+			font-family: 'Playfair Display', serif;
+		}
+		.item-title {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
+/* service section - end */
+
+/* 22.19  - home wedding - end
+================================================== */
+
+
+/* 22.20 - home - start
+================================================== */
+
+/* slider section - start */
+.home-travel {
+	.hotel-carousel {
+		.item {
+			.popup-video {
+				margin-bottom: 80px;
+				transform: unset !important;
+				position: static !important;
+			}
+			.item-title {
+				font-size: 70px;
+			}
+		}
+
+		.owl-dots {
+			left: 360px;
+			right: unset;
+		}
+	}
+}
+/* slider section - end */
+
+/* portfolio section - start */
+.destinations-masoney-grid {
+	margin: -15px;
+	padding-top: 45px;
+	.grid-item,
+	.grid-sizer {
+		width: 33.333%;
+	}
+
+	.grid-item {
+		padding: 15px;
+		&.w-66 {
+			width: 66.666%;
+		}
+	}
+}
+/* portfolio section - end */
+
+/* 22.20 - home - end
+================================================== */
+
+
+/* 22.21 - home yoga - start
+================================================== */
+
+/* banner section - start */
+.yoga-banner {
+	min-height: 800px;
+}
+/* banner section - end */
+
+/* portfolio section - start */
+.yoga-masoney-grid {
+	.grid-item,
+	.grid-sizer {
+		width: 25%;
+	}
+}
+/* portfolio section - end */
+
+/* 22.21 - home yoga - end
+================================================== */
+
+
+/* 22.22 - home blogger - start
+================================================== */
+
+/* home reset - start */
+.home-blogger {
+	padding-left: 60px;
+	padding-right: 60px;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 700;
+		font-family: 'Playfair Display', serif;
+	}
+
+	.section-title {
+		.title-text {
+			font-size: 48px;
+			font-weight: 700;
+		}
+	}
+
+	.owl-dots {
+		.owl-dot {
+			>span {
+				width: 15px;
+				height: 5px;
+			}
+			&.active {
+				>span {
+					width: 30px;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+
+}
+/* home reset - end */
+
+
+/* slider section - start */
+.blogger-carousel {
+	.item {
+		min-height: 760px;
+		padding-bottom: 125px;
+		.post-date {
+			margin-bottom: 30px;
+			display: inline-block;
+		}
+		.title-text {
+			font-size: 38px;
+		}
+	}
+
+	.owl-dots {
+		left: 50%;
+		bottom: 50px;
+		position: absolute;
+		transform: translateX(-50%);
+		.owl-dot {
+			>span {
+				width: 15px;
+				height: 5px;
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+			&:hover {
+				>span {
+					background-color: #ffffff;
+				}
+			}
+			&.active {
+				>span {
+					width: 30px;
+					transform: scale(1);
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+}
+/* slider section - end */
+
+/* blog section - start */
+.home-blogger {
+
+	.main-blog-grid {
+		.item-title {
+			>a {
+				font-family: 'Playfair Display', serif;
+			}
+		}
+	}
+
+}
+/* blog section - end */
+
+/* 22.22 - home blogger - end
+================================================== */
+
+
+/* 22.23 - home project showcase - start
+================================================== */
+/* empty */
+/* 22.23 - home project showcase - end
+================================================== */
+
+
+/* 22.24 - home portfolio - start
+================================================== */
+
+/* home reset - start */
+.home-portfolio {
+	padding: 20px;
+	padding-top: 150px;
+}
+/* home reset - end */
+
+/* quote section - start */
+.quote-section {
+	p {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 700;
+		padding-top: 80px;
+		position: relative;
+		font-family: $heading-font;
+		>span {
+			top: 0px;
+			left: 50%;
+			line-height: 1;
+			font-size: 74px;
+			position: absolute;
+			transform: translateX(-50%);
+		}
+	}
+}
+/* quote section - end */
+
+/* 22.24 - home portfolio - end
+================================================== */
+
+
+/* 22.25 - home portfolio 2 - start
+================================================== */
+
+/* home reset - start */
+.home-portfolio-2 {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+/* home reset - end */
+
+/* 22.25 - home portfolio 2 - end
+================================================== */
+
+
+/* 22.26 - home portfolio 2 - start
+================================================== */
+
+/* home reset - start */
+.home-portfolio-3 {
+	padding-top: 255px;
+
+	.section-title {
+		.title-text {
+			font-size: 48px;
+		}
+
+		&.has-tb-line {
+			padding: 120px 0px;
+			&:after,
+			&:before {
+				height: 60px;
+			}
+		}
+
+		&.size-increase {
+			.title-text {
+				font-size: 60px;
+			}
+		}
+	}
+}
+
+/* home reset - end */
+
+/* header section - start */
+.home-portfolio-3 {
+	.sticky-header {
+		padding: 60px 0px;
+		.menu-btn {
+			float: none;
+			display: table;
+			margin: 60px auto 0px;
+		}
+	}
+
+	.sticky-header.stuck {
+		padding: 23.5px 0px;
+		.menu-btn {
+			margin: 20px auto 0px;
+		}
+	}
+}
+/* header section - end */
+
+/* 22.26 - home portfolio 2 - end
+================================================== */
+
+
+/* 22.27 - home portfolio 4 - start
+================================================== */
+
+/* banner section - start */
+.portfolio-4-banner {
+	min-height: 520px;
+	padding-bottom: 130px;
+	h1 {
+		line-height: 1;
+		font-size: 72px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	h3,p {
+		line-height: 1;
+		font-size: 24px;
+	}
+	h3 {
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	p {
+		font-weight: 600;
+	}
+}
+/* banner section - end */
+
+/* 22.27 - home portfolio 4 - end
+================================================== */
+
+
+/* 22.28 - home shop creative - start
+================================================== */
+
+/* home reset - start */
+.home-shop-creative {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+/* home reset - end */
+
+/* slider section - start */
+.shop-slider {
+	.item {
+		min-height: 630px;
+		background-size: auto 100%;
+		background-position: left center;
+		.item-title {
+			font-size: 60px;
+			font-weight: 600;
+			padding-top: 60px;
+			position: relative;
+			&:before {
+				top: 0px;
+				left: 0px;
+				height: 2px;
+				content: '';
+				width: 120px;
+				position: absolute;
+				background-color: #000000;
+			}
+		}
+	}
+
+	.owl-dots {
+		top: 50%;
+		left: 60px;
+		position: absolute;
+		transform: translateY(-50%);
+		.owl-dot {
+			display: block;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			>span {
+				margin: 0px;
+				width: 30px;
+				height: 2px;
+				transform: scale(1);
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			&:hover {
+				background-color: $default-black;
+			}
+			&.active {
+				>span {
+					width: 60px;
+					transform: scale(1);
+					background-color: $default-black;
+				}
+			}
+		}
+	}
+}
+/* slider section - end */
+
+/* 22.28 - home shop creative - end
+================================================== */
+
+
+/* 22.29 - home shop classic - start
+================================================== */
+
+/* slider section - start */
+.home-shop-classic {
+	.slider-section {
+		.social-links {
+			top: 50%;
+			z-index: 2;
+			left: 130px;
+			position: absolute;
+			transform: translateY(-50%);
+			>ul {
+				>li {
+					text-align: center;
+					margin-bottom: 45px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+					span {
+						writing-mode: vertical-rl;
+					}
+				}
+			}
+		}
+	}
+}
+
+.shop-slider-2 {
+	.item {
+		min-height: 800px;
+		background-size: auto 100%;
+		background-position: right center;
+		.date-text {
+			color: #000000;
+			font-size: 18px;
+			font-weight: 600;
+			position: relative;
+			padding-right: 150px;
+			display: inline-block;
+			&:before {
+				top: 50%;
+				right: 0px;
+				height: 2px;
+				content: '';
+				width: 115px;
+				position: absolute;
+				background-color: #000000;
+				transform: translateY(-50%);
+			}
+		}
+		.item-title {
+			font-size: 60px;
+			font-weight: 600;
+		}
+	}
+
+	.owl-nav.disabled {
+		right: 0px;
+		z-index: 1;
+		margin: 0px;
+		bottom: 0px;
+		display: table;
+		position: absolute;
+		background-color: #ffffff;
+		button {
+			float: left;
+			width: 80px;
+			height: 80px;
+			display: inline-block;
+			&:before {
+				font-size: 36px;
+				color: $default-color;
+			}
+			&:hover {
+				&:before {
+					color: #000000;
+				}
+			}
+		}
+	}
+	.owl-dots {
+		display: none;
+	}
+}
+/* slider section - end */
+
+/* shop section - start */
+.classic-shop-masoney {
+	.grid-item,
+	.grid-sizer {
+		width: 50%;
+	}
+
+	.grid-item {
+		padding-top: 100px;
+		.section-title {
+			.title-text {
+				max-width: 470px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+/* shop section - end */
+
+/* booking section - start */
+.home-shop-classic {
+	.booking-section {
+		.section-title {
+			.title-text {
+				font-size: 32px;
+			}
+		}
+	}
+}
+/* booking section - end */
+
+/* 22.29 - home shop classic - end
+================================================== */
+
+
+/* 22.30 - home minimal - start
+================================================== */
+
+/* home reset - start */
+.home-shop-minimal {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+/* home reset - end */
+
+/* slider section - start */
+.home-shop-minimal {
+	.shop-slider {
+		.item {
+			min-height: 670px;
+			position: relative;
+			background-size: cover;
+			background-position: left bottom;
+			.item-title {
+				font-size: 46px;
+			}
+		}
+	}
+}
+/* slider section - end */
+
+/* shop section - start */
+.home-shop-minimal {
+	.shop-section {
+		.arrow-top-right {
+			.owl-nav {
+				top: -39px;
+			}
+		}
+	}
+}
+/* shop section - end */
+
+/* 22.30 - home minimal - end
+================================================== */
+
+/* 22 - home page - end
+==================================================================================================== */

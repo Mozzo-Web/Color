@@ -1,0 +1,300 @@
+/* 10 - about pages - start
+==================================================================================================== */
+
+/* about section - start */
+.about-section {
+	
+	.about-image {
+		&.creative-image {
+			z-index: 1;
+			padding: 20px;
+			margin-top: -100px;
+			position: relative;
+			background-color: #ffffff;
+		}
+		>img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.about-content {
+		>.item-title {
+			&.has-line {
+				position: relative;
+				padding-bottom: 30px;
+				&:before {
+					left: 0px;
+					width: 60px;
+					height: 2px;
+					content: '';
+					bottom: 0px;
+					position: absolute;
+					background-color: #000000;
+				}
+			}
+		}
+
+		p {
+			font-size: 16px;
+		}
+		.signiture {
+			line-height: 1;
+			display: block;
+			color: #000000;
+			font-size: 70px;
+			font-family: "PWSignaturetwo";
+		}
+
+		.person-name {
+			font-size: 48px;
+		}
+		.person-title {
+			font-size: 26px;
+		}
+	}
+
+}
+/* about section - end */
+
+
+/* about v1 - start */
+.about-list-layout {
+	margin-bottom: 100px;
+	&:last-child {
+		margin-bottom: 0px !important;
+	}
+	.item-image {
+		>img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.item-content {
+		z-index: 1;
+		position: relative;
+		.item-title {
+			font-size: 42px;
+		}
+	}
+	p {
+		font-size: 16px;
+	}
+
+	.item-content {
+		.about-service {
+			>ul {
+				>li {
+					margin-bottom: 50px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+				}
+			}
+			.service-icon {
+				margin-top: 3px;
+				>img {
+					width: 45px;
+				}
+			}
+			.service-content {
+				display: table;
+				.service-title {
+					font-size: 18px;
+					font-weight: 600;
+					margin-bottom: 15px;
+				}
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+
+		.experience-info {
+			>ul {
+				>li {
+					position: relative;
+					margin-bottom: 30px;
+					padding-bottom: 30px;
+					&:before {
+						left: 0px;
+						content: '';
+						width: 40px;
+						height: 2px;
+						bottom: -1px;
+						position: absolute;
+						background-color: #000000;
+					}
+					&:last-child {
+						margin-bottom: 0px !important;
+						padding-bottom: 0px !important;
+						&:before {
+							display: none;
+						}
+					}
+					span {
+						font-size: 14px;
+						letter-spacing: 2px;
+						display: inline-block;
+						text-transform: uppercase;
+					}
+					h4 {
+						font-size: 21px;
+						font-weight: 600;
+						margin-bottom: 5px;
+					}
+					p {
+						font-size: 16px;
+						font-weight: 600px;
+						color: $default-black;
+					}
+				}
+			}
+		}
+	}
+
+	&:nth-child(odd) {
+		.item-content {
+			padding: 0px 0px 0px 100px;
+			.item-title {
+				margin: 0px 0px 50px -200px;
+			}
+			.about-service {
+				.service-icon {
+					float: left;
+				}
+				.service-content {
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(even) {
+		.item-content {
+			padding: 0px 100px 0px 0px;
+			.item-title {
+				margin: 0px -200px 50px 0px;
+			}
+			.about-service {
+				.service-icon {
+					float: right;
+				}
+				.service-content {
+					padding-left: 0px;
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+}
+/* about v1 - end */
+
+
+/* about v2 - end */
+.about-section {
+	.item-title {
+		font-size: 42px;
+		.d-block {
+			font-family: $heading-font;
+		}
+	}
+
+	.about-content {
+		p {
+			&.line-left {
+				position: relative;
+				padding-left: 100px;
+				&:before {
+					top: 7px;
+					left: 0px;
+					width: 2px;
+					content: '';
+					height: 60px;
+					position: absolute;
+					background-color: $default-black;
+				}
+			}
+		}
+
+		.about-service {
+			>ul {
+				>li {
+					margin-bottom: 50px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+				}
+			}
+			.service-icon {
+				float: left;
+				margin-top: 3px;
+				>img {
+					width: 45px;
+				}
+			}
+			.service-content {
+				display: table;
+				padding-left: 30px;
+				.service-title {
+					font-size: 18px;
+					font-weight: 500;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.child-item {
+		margin-top: 60px;
+		.item-title {
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 13px;
+		}
+	}
+}
+/* about v2 - end */
+
+
+/* how to use - start */
+.howtouse-section {
+	&.text-white {
+		.section-title {
+			.title-text {
+				color: #ffffff;
+			}
+		}
+	}
+}
+/* how to use - end */
+
+
+/* history section - start */
+.history-section {
+	.section-title {
+		.title-text {
+			z-index: 1;
+			font-weight: 700;
+			line-height: 1.45;
+			position: relative;
+			.icon {
+				top: 50%;
+				left: 50%;
+				z-index: -1;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+/* history section - end */
+
+/* 10 - about pages - end
+==================================================================================================== */

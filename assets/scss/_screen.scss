@@ -1,0 +1,78 @@
+/*----------------------------------------*/
+/*  13. Screen
+/*----------------------------------------*/
+.screen {
+    &-area {
+        padding-top: 435px;
+        .section {
+            &-title {
+                color: $extbot-heading-2;
+                font-size: 55px;
+                line-height: 70px;
+                @include breakpoint(max-sm-device) {
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    &-bg {
+        background-position: bottom;
+        @include breakpoint(max-lg-device) {
+            background-position: right;
+        }
+    }
+    &-container {
+        @include breakpoint(min-xxl-device) {
+            max-width: 1500px;
+        }
+        @include breakpoint(xl-device) {
+            max-width: 100%;
+        }
+    }
+    &-slider {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        .screen {
+            &-item {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-item {
+        border: 2px solid transparent;
+        transition: $baseTransition;
+        border-radius: 32px;
+        padding: 20px;
+        &:hover {
+            border-color: $extbot-primary-2;
+        }
+        @include breakpoint(max-sm-device) {
+            border: 0;
+        }
+    }
+    &-img {
+        display: block;
+    }
+    &-arrow {
+        &-wrap {
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+            .screen {
+                &-button {
+                    &-prev,
+                    &-next {
+                        i {
+                            &:hover {
+                                background-color: $extbot-primary-2;
+                                border-color: $extbot-primary-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

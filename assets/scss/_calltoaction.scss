@@ -1,0 +1,19 @@
+/* 08 - call to action section - start
+==================================================================================================== */
+.calltoaction-section {
+	.title-text {
+		font-size: 32px;
+		span {
+			font-size: 21px;
+			font-family: $heading-font;
+		}
+	}
+
+	&.text-white {
+		.title-text {
+			color: #ffffff;
+		}
+	}
+}
+/* 08 - call to action section - end
+==================================================================================================== */

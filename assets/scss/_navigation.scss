@@ -1,0 +1,146 @@
+/*----------------------------------------*/
+/* 04. Navigation
+/*----------------------------------------*/
+.partner,
+.testimonial,
+.screen,
+.blog {
+    &-arrow {
+        &-wrap {
+            display: flex;
+            &.style {
+                &-2 {
+                    .testimonial {
+                        &-button {
+                            &-prev,
+                            &-next {
+                                i {
+                                    color: $white;
+                                    &:hover {
+                                        border-color: #1f1927;
+                                        background-color: #1f1927;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-3 {
+                    .testimonial {
+                        &-button {
+                            &-prev,
+                            &-next {
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                z-index: 1;
+                                i {
+                                    border-color: #edc8c1;
+                                    color: #edc8c1;
+                                    &:hover {
+                                        background-color: $extbot-primary-4;
+                                        border-color: $extbot-primary-4;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            &-next {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+                &-4 {
+                    .blog {
+                        &-button {
+                            &-prev,
+                            &-next {
+                                i {
+                                    border-color: #eeeeee;
+                                    color: #0f034a;
+                                    font-size: 25px;
+                                    width: 52px;
+                                    height: 52px;
+                                    line-height: 51px;
+                                    border-radius: 10px;
+                                    &:hover {
+                                        background-color: #5138ee;
+                                        border-color: #5138ee;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-button {
+        &-prev,
+        &-next {
+            i {
+                border: 2px solid rgb(227, 232, 241);
+                transition: $baseTransition;
+                color: #b6bcc4;
+                font-size: 20px;
+                border-radius: 50%;
+                width: 76px;
+                height: 76px;
+                line-height: 75px;
+                display: block;
+                text-align: center;
+                &:hover {
+                    background-color: $extbot-primary;
+                    border-color: $extbot-primary;
+                    color: $white;
+                }
+            }
+        }
+        &-prev {
+            margin-right: 20px;
+        }
+    }
+}
+
+/* ---Pagination--- */
+.partner {
+    &-pagination {
+        position: relative;
+        margin-top: 80px;
+        .swiper {
+            &-pagination {
+                &-bullet {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        &.style {
+            &-2 {
+                .swiper {
+                    &-pagination {
+                        &-bullet {
+                            background-color: $extbot-primary-3;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+            &-3 {
+                .swiper {
+                    &-pagination {
+                        &-bullet {
+                            background-color: $extbot-primary-4;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

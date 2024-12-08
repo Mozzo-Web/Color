@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*  21. 404
+/*----------------------------------------*/
+.error {
+    &-404 {
+        &-area {
+            padding-top: 140px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &-content {
+            margin-top: 75px;
+            .title {
+                color: #212832;
+                font-size: 40px;
+                line-height: 1.4;
+                margin-bottom: 25px;
+                @include breakpoint(max-xxs-device) {
+                    font-size: 35px;
+                }
+            }
+            .desc {
+                font-family: $gordita-font;
+                color: #4a4b51;
+                line-height: 30px;
+                margin-bottom: 70px;
+                max-width: 610px;
+            }
+        }
+    }
+}

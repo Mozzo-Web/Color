@@ -1,0 +1,37 @@
+/*----------------------------------------*/
+/*  12. Intro
+/*----------------------------------------*/
+.intro {
+    &-area {
+        .section {
+            &-title {
+                color: $extbot-heading-2;
+                font-size: 55px;
+                line-height: 70px;
+                margin-bottom: 20px;
+                @include breakpoint(max-sm-device) {
+                    font-size: 35px;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                }
+            }
+            &-desc {
+                line-height: 42px;
+                margin-bottom: 75px;
+                @include breakpoint(max-sm-device) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    &-item {
+        &.intro-bg {
+            background-color: transparent;
+            height: 600px;
+        }
+        .popup-btn {
+            display: flex;
+            height: 100%;
+        }
+    }
+}

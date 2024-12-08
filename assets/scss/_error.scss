@@ -1,0 +1,35 @@
+/* 20 - 404 error page - start
+==================================================================================================== */
+.error-section {
+	padding: 150px 0px;
+	.error-content {
+		.title-text {
+			font-size: 32px;
+		}
+		p {
+			font-size: 16px;
+			a {
+				color: #000000;
+			}
+		}
+		.form-item {
+			input {
+				height: 60px;
+				border: 1px solid #ededed;
+				&:focus {
+					box-shadow: 0px 3px 11px 0px rgba(249, 79, 79, 0.14);
+				}
+			}
+			button {
+				top: 50%;
+				right: 20px;
+				color: #000000;
+				font-size: 20px;
+				position: absolute;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+/* 20 - 404 error page - end
+==================================================================================================== */

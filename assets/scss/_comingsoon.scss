@@ -1,0 +1,62 @@
+/* 21 - coming soon page - start
+==================================================================================================== */
+
+.coming-soon-page {
+	position: relative;
+	.header-section,
+	.footer-section {
+		left: 0px;
+		right: 0px;
+		z-index: 999;
+		padding: 60px 0px;
+		position: absolute;
+	}
+	.header-section {
+		top: 0px;
+	}
+	.footer-section {
+		bottom: 0px;
+	}
+}
+
+.comingsoon-section {
+	background-size: auto;
+	background-position: right bottom;
+	.comingsoon-content {
+		.title-text {
+			font-size: 32px;
+			line-height: 1.4;
+		}
+
+		.countdown-timer {
+			>ul {
+				>li {
+					width: 100px;
+					height: 100px;
+					padding: 19px 0px;
+					text-align: center;
+					margin-right: 20px;
+					border-radius: 100%;
+					border: 3px solid #8d8d8d;
+					strong {
+						color: #ffffff;
+						line-height: 1;
+						display: block;
+						font-size: 36px;
+						font-weight: 700;
+						font-family: $heading-font;
+					}
+					small {
+						display: block;
+						font-size: 12px;
+						font-weight: 500;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 21 - coming soon page - end
+==================================================================================================== */

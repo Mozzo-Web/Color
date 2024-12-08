@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Shift</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Extbot app landing bootstrap 5 template is an awesome website template for any app store.">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="assets/css/gordita-font.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <!-- Begin Main Header Area -->
+    <header class="flex-row">
+        <div class="nav-bar flex-row">
+            <nav class="nav-options nav-obj flex-column">
+                <ul class="flex-row">
+                    <li>
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#about">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#product">Productos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo nav.png">
+                </a>
+            </div>
+            <input type=checkbox id="show-nav" onclick="showNavbar()">
+            <div class="toggle-container flex-row">
+                <label class="toggle" for="show-nav">
+                    <img src="assets/images/menu.png">
+                </label>
+            </div>
+            <div class="nav-register nav-obj flex-row">
+                <div class="nav-register-button flex-column">
+                    <a href="" class="register-button button">
+                        <p>Registro</p>
+                    </a>
+                </div>
+
+            </div>          
+        </div>
+    </header>
+    <nav class="navbar-container" id="navbar">
+        <div class="navbar-blur" id="nav-bg"></div>
+        <ul class="flex-column">
+            <li id="home-nav"><a href="#home">Inicio</a></li>
+            <li id="services-nav"><a href="#about">Nosotros</a></li>
+            <li id="portfolio-nav"><a href="#product">Productos</a></li>
+            <li id="contact-nav"><a href="">Registro</a></li>
+        </ul>
+    </nav>        
+    <!-- Main Header Area End Here -->
+
+    <!-- Begin Hero Area -->
+        <section id="home" class="hero-section flex-row">
+        <div class="hero-content section-content">
+            <div class="hero-img">  
+                <img src="assets/images/hero.png">
+            </div>
+            <div class="hero-txt">
+                <h1>Control visual que empodera 
+y motiva a través de la información.</h1>
+                <p class="sub-h1">Empresa dedicada a proyecto de iluminación LED, imágenes y video.</p>
+                <a href="#about" class="hero-button button">
+                    <p>Conócenos</p>
+                </a>
+            </div>
+            <div class="hero-decoration">
+                <div class="h-b-circle b-circle"></div>
+                <div class="h-y-circle y-circle"></div>
+            </div>
+        </div>
+    </section>
+    <section class="support-apps-section flex-row">
+        <div class="support-content section-content">
+            <h2>Sistemas de Apoyo</h2>
+            <ul class="support-reel">
+                <li class="support-card sc1">
+                    <div class="support-app-card-top flex-row">
+                        <p>Google Cloud Platform</p>
+                        <img src="assets/images/google-cloud.png">
+                    </div>
+                    <p class="support-app-card-info">Web Service & Cloud Computing
+    </p>
+                </li>
+                <li class="support-card sc2">
+                    <div class="support-app-card-top flex-row">
+                        <p>Ublox</p>
+                        <img src="assets/images/ublox.png">
+                    </div>
+                    <p class="support-app-card-info">Empresa Tecnológica de Comunicaciones
+    </p>
+                </li>
+                <li class="support-card sc3">
+                    <div class="support-app-card-top flex-row">
+                        <p>Particle</p>
+                        <img src="assets/images/particle.png">
+                    </div>
+                    <p class="support-app-card-info">Plataforma IOT
+    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- Hero Area End Here -->
+
+        <!-- Begin Feature Area -->
+        <div id="feature" class="feature-area feature-style-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-area">
+                            <h2 class="section-title">Productos y Servicios</h2>
+                        </div>
+                        <div class="swiper-container-overflow">
+                        <div class="swiper-container feature-slider-2 product-swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/andon1x1.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Sistema Andon</h3>
+                                        <p class="desc">Serie de alertas visuales y auditivas, registrando cifras de producción y magnitud de los inconvenientes.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/led.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Pantallas LED</h3>
+                                        <p class="desc">Pantallas planas pueden producir gráficos con una relación de calidad más elevada.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/tablero.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Tableros</h3>
+                                        <p class="desc">Table de producción que muestra datos específicos para tener un mayor control de la producción.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/pc.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Desarrollo de software</h3>
+                                        <p class="desc">That necessitat ecommerce platform
+                                            optimi your store problem popularise the release roboust.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/tools.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Instalaciones de equipo</h3>
+                                        <p class="desc">That necessitat ecommerce platform
+                                            optimi your store problem popularise the release roboust.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide feature-item">
+                                    <div class="feature-icon">
+                                        <img src="assets/images/products/led.png" alt="Feature Icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">Soluciones a la medida</h3>
+                                        <p class="desc">Brindando soluciones hechas a la medida para identificar los fallos en el uso de las maquinarias.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="feature-btn-wrap">
+                            <a class="btn btn-custom-size extbot-primary-3" href="contact.html">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features Area End Here -->
+
+        <div class="main-content" data-bg-image="assets/images/migrate/bg/1-4-1920x1408.png">
+
+            <!-- Begin Banner Area -->
+            <div class="banner-area banner-style-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-item">
+                            <div class="banner-img banner-bg" data-bg-image="assets/images/miniatura.png">
+                                <div class="popup-btn">
+                                    <a class="popup-vimeo wave-btn style-3" href="https://vimeo.com/946371512?autoplay=1">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <div class="icon">
+                                            <i class="icofont-play"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="banner-content">
+                                <h2 class="banner-title">"Control visual que empodera 
+y motiva a través de la información.”</h2>
+                                <p class="banner-desc">Ten una experiencia completa en nuestras plataformas
+                                </p>
+                                <div class="banner-btn-wrap">
+                                    <a href="contact.html">
+                                        <img src="assets/images/button/5-1-213x73.png" alt="Button">
+                                    </a>
+                                    <a href="contact.html">
+                                        <img src="assets/images/button/5-2-213x73.png" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Area End Here -->
+
+        </div>
+
+        <!-- Begin Banner Area -->
+        <div class="banner-area banner-style-7">
+            <div class="container banner-container-2">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="banner-img">
+                            <img src="assets/images/banner/7-1-837x1185.png" alt="Banner">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                        <div class="banner-content">
+                            <span class="banner-category">El sistema a de Color Shift brinda reportes en temas de:<span/>
+                            <ul>
+                                <li><span>Graficas de disponibilidad<span/></li>
+                                <li><span>Graficas de rendimiento<span/></li>
+                                <li><span>Graficas de calidad<span/></li>
+                                <li><span>Tiempo perdido en total en cada una de las líneas de producción<span/></li>
+                                <li><span>Piezas creadas en total en la línea<span/></li>
+                                <li><span>Porcentaje de Rendimiento y Disponibilidad de la línea<span/></li>
+                            </ul>
+                            <span class="banner-category">Así como también registrar:</span>
+                            <ul>
+                                <li><span>Cantidad de equipos instalados (tipo de dispositivo y a que línea de producción pertenecen)<span/></li>
+                                <li><span>Líneas activas o inactivas por fallos o paros de usuarios.<span/></li>
+                                <li><span>Fallo (tipo de fallo, fecha en que inicio, línea a la que corresponde)<span/></li>
+                                <li><span>Solución (Fecha en que se solucionó, tiempo en que se tardó resolver, usuario que brindo solución<span/></li>
+                                <li><span>Catálogo de usuarios/departamentos en planta<span/></li>
+                                <li><span>Usuarios responsables del fallo y solución<span/></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Area End Here -->
+        <!-- Begin FAQ Area -->
+        <div class="faq-area faq-style-common faq-style-2">
+            <div class="container">
+                <div class="section-area">
+                    <h2 class="section-title">Misión y Visión</h2>
+                    <p class="section-desc">Somos una empresa mexicana de tecnología dedicada en proyectos relacionada en iluminación LED, e imagenes y video.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h3 class="faq-title">Misión</h3>
+                            <p class="faq-desc">Desarrollar una gama producto que puedan, de manera eficiente, mostrar por medio de imágenes, luces o alertas, el estado de líneas de producción, fallas en ella, así como simples imagenes para motivos de promoción en área pública.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h3 class="faq-title">Visión</h3>
+                            <p class="faq-desc">Ser una empresa líder en tecnología relacionada con el diseño, instalación y operación de pantallas LEDs para sus múltiples usos, así como la customización de software para usos personales o específicos de acuerdo a los requerimientos de los clientes.
+                            </p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- FAQ Area End Here -->
+
+
+        <!-- Begin Partner Area -->
+       <!-- <div class="partner-area partner-style-3">
+            <div class="container partner-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-area">
+                            <h2 class="section-title">Our Trusted Partner’s</h2>
+                            <p class="section-desc">Necessitates a robust ecommerce platform</p>
+                        </div>
+                        <div class="swiper-container partner-slider-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-1-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-2-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-3-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-4-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-1-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-item">
+                                    <a href="#" class="partner-img">
+                                        <img src="assets/images/partner/1-2-220x40.png" alt="Partner">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination partner-pagination style-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Partner Area End Here -->
+
+        <!-- Begin Testimonial Area -->
+        <div id="testimonial" class="testimonial-area testimonial-style-3" data-bg-image="assets/images/testimonial/bg/3-1-1920x913.png">
+            <div class="container">
+                <div class="section-area section-style-3">
+                    <div class="section-wrap">
+                        <h2 class="section-title testimonial-title">Sistemas de Apoyo</h2>
+                        <p class="section-desc">That necessitates a robust ecommerce platform that
+                            optimizes your store & products
+                        </p>
+                    </div>
+                    <!-- Partner Arrows -->
+                    <div class="testimonial-arrow-wrap style-2">
+                        <div class="testimonial-button-prev">
+                            <i class="icofont-double-left"></i>
+                        </div>
+                        <div class="testimonial-button-next">
+                            <i class="icofont-double-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container testimonial-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper-container testimonial-slider-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-user-info">
+                                            <div class="user-img">
+                                                <img src="assets/images/google-cloud-b.png" alt="User Image">
+                                            </div>
+                                            <div class="user-content">
+                                                <h2 class="user-title">Google Cloud Platform</h2>
+                                                <p class="user-occupation">Web Service & Cloud Computing</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-comment">
+                                                Conjunto de servicios de computación en la nube que se ejecuta en la misma infraestructura que Google usa internamente para sus productos de usuario final.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-user-info">
+                                            <div class="user-img">
+                                                <img src="assets/images/ublox-b.png" alt="User Image">
+                                            </div>
+                                            <div class="user-content">
+                                                <h2 class="user-title">Ublox</h2>
+                                                <p class="user-occupation">Empresa Tecnológica de Comunicaciones</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-comment">
+                                                Proveedor global de tecnologías líderes de posicionamiento y comunicación inalámbrica para los mercados automotriz, industrial y de consumo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-user-info">
+                                            <div class="user-img">
+                                                <img src="assets/images/particle-b.png" alt="User Image">
+                                            </div>
+                                            <div class="user-content">
+                                                <h2 class="user-title">Particle</h2>
+                                                <p class="user-occupation">Plataforma loT</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-comment">
+                                                Plataforma loT totalmente integrada que ofrece todo lo que necesita para implementar un producto loT. No solo funcionalidad sino también seguridad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Area End Here -->
+
+        <!-- Begin Pricing Area -->
+        <div class="pricing-area pricing-style-3">
+            <div class="container">
+                <div class="section-area">
+                    <h2 class="section-title">Productos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pricing-tab">
+                            <!--
+                            <ul class="nav pricing-tab-nav" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="tab-btn" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">
+                                        Monthly
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="active tab-btn" id="yearly-tab" data-bs-toggle="tab" href="#yearly" role="tab" aria-controls="yearly" aria-selected="true">
+                                        Yearly
+                                    </a>
+                                </li>
+                            </ul>
+                            -->
+                        </div>
+                            <div class="tab-pane fade active show" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+                                <div class="pricing-item-wrap row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="pricing-item">
+                                            <div class="pricing-wrap">
+                                                <div class="title-with-desc">
+                                                    <h2 class="pricing-title">Sistema Andon</h2>
+                                                </div>
+                                                <div class="pricing-info">
+                                                    <img src="assets/images/products/andon1x1.png">
+                                                </div>
+                                            </div>
+                                            <div class="pricing-list-wrap">
+                                                <ul class="pricing-list style-2">
+                                                    <li>
+                                                        <a>
+                                                            ● Disminución sustantiva de Tiempos Muertos
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                           ● Aumento de la Productividad
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Mejora en la entrega del producto
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Concientización de todo el personal de los problemas de producción
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="pricing-btn-wrap">
+                                                    <a class="btn btn-custom-size btn-outline" href="andon.html">Más información</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="pricing-item">
+                                            <div class="pricing-wrap">
+                                                <div class="title-with-desc">
+                                                    <h2 class="pricing-title">Pantallas LED</h2>
+                                                </div>
+                                                <div class="pricing-info">
+                                                    <img src="assets/images/products/led0.png">
+                                                </div>
+                                            </div>
+                                            <div class="pricing-list-wrap">
+                                                <ul class="pricing-list style-2">
+                                                    <li>
+                                                        <a>
+                                                            ● Densidad de color alta
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                           ● Iluminación uniforme
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Excelente para uso de exteriores e interiores
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Ideal para anuncios publicitarios 
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="pricing-btn-wrap">
+                                                    <a class="btn btn-custom-size btn-outline" href="led.html">Más información</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="pricing-item">
+                                            <div class="pricing-wrap">
+                                                <div class="title-with-desc">
+                                                    <h2 class="pricing-title">Tableros de producción</h2>
+                                                </div>
+                                                <div class="pricing-info">
+                                                    <img src="assets/images/products/tablero0.png">
+                                                </div>
+                                            </div>
+                                            <div class="pricing-list-wrap">
+                                                <ul class="pricing-list style-2">
+                                                    <li>
+                                                        <a>
+                                                            ● Reducir desperdicios
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                           ● Mejorar la calidad 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Aumentar la eficiencia
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Aumentar la productividad hasta en un 50%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Actualizaciones en tiempo real
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="pricing-btn-wrap">
+                                                    <a class="btn btn-custom-size btn-outline" href="tableros.html">Más información</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="pricing-item">
+                                            <div class="pricing-wrap">
+                                                <div class="title-with-desc">
+                                                    <h2 class="pricing-title">Soluciones a la medida</h2>
+                                                </div>
+                                                <div class="pricing-info">
+                                                    <img src="assets/images/products/tools.png">
+                                                </div>
+                                            </div>
+                                            <div class="pricing-list-wrap">
+                                                <ul class="pricing-list style-2">
+                                                    <li>
+                                                        <a>
+                                                            ● Sensores con actualizaciones en tiempo real
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                           ● Reportes en toda la maquinaria en líneas de producción
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            ● Notificaciones a los responsables del área 
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="pricing-btn-wrap">
+                                                    <a class="btn btn-custom-size btn-outline" href="contact.html">Más información</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+        <!-- Pricing Area End Here -->
+
+        <!-- Begin Newsletter Area -->
+        <div class="newsletter-area style-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="newsletter-item" data-bg-image="assets/images/newsletter/bg/2-1-1173x373.png">
+                            <div class="inner-item">
+                                <h2 class="newsletter-title">Suscribete a nuestro portal Andon</h2>
+                                <form class="newsletter-form" id="mc-form" action="#">
+                                    <input class="input-field" id="mc-email" type="email" autocomplete="off" name="Enter Your Email" value="Ingresa tu correo" onblur="if(this.value==''){this.value='Enter Your Email'}" onfocus="if(this.value=='Enter Your Email'){this.value=''}">
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-custom-size extbot-primary-3 blackcurrant-hover" id="mc-submit">
+                                            Suscribir
+                                            <i class="icofont-double-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                                <!-- Mailchimp Alerts -->
+                                <div class="mailchimp-alerts text-centre p3-5">
+                                    <div class="mailchimp-submitting"></div>
+                                    <div class="mailchimp-success"></div>
+                                    <div class="mailchimp-error"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Area End Here -->
+        <div class="form-area form-style-2">
+                <div class="container">
+                <div class="section-area">
+                    <h2 class="section-title contact-title">Contacto</h2>
+                </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-5">
+                                <form id="contact-form" class="form" action="https://whizthemes.com/mail-php/mamunur/extbot/extbot.php">
+                                    <div class="form-field">
+                                        <input type="text" name="con_name" placeholder="Nombre" class="input-field">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="con_email" placeholder="Email" class="input-field">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="con_subject" placeholder="Número*" class="input-field">
+                                    </div>
+                                    <div class="form-field mb-0">
+                                        <textarea name="con_message" placeholder="Comentario" class="textarea-field"></textarea>
+                                    </div>
+                                    <div class="form-btn-wrap">
+                                        <button type="submit" value="submit" class="form-btn" name="submit">
+                                            Enviar
+                                            <i class="icofont-long-arrow-right"></i>
+                                        </button>
+                                        <p class="form-messege"></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-5 col-lg-7">
+                                <div class="contact-sidebar">
+                                    <div class="contact-sidebar-banner">
+                                        <div class="inner-img">
+                                            <img src="assets/images/contact/banner/1-1-310x310.png" alt="Banner">
+                                        </div>
+                                    </div>
+                                    <div class="contact-sidebar-info">
+                                        <ul class="contact-info">
+                                            <li>
+                                                <div class="contact-icon">
+                                                    <img src="assets/images/contact/icon/calling.png" alt="Contact Icon">
+                                                </div>
+                                                <a href="tel://00-359-467-9434">(00) 359 467 9434</a>
+                                            </li>
+                                            <li>
+                                                <div class="contact-icon">
+                                                    <img src="assets/images/contact/icon/message.png" alt="Contact Icon">
+                                                </div>
+                                                <a href="mailto://info@example.com">info@example.com</a>
+                                            </li>
+                                            <li>
+                                                <div class="contact-icon">
+                                                    <img src="assets/images/contact/icon/location.png" alt="Contact Icon">
+                                                </div>
+                                                <span>
+                                            845 Central Ave <br>
+                                            Hamilton, Ohio(OH), 45011
+                                        </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Begin Footer Area -->
+        <footer id="footer-section" class="footer-section sec-ptb-100 bg-default-black text-white clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="brand-logo clearfix">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-white.png" alt="logo_not_found">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="useful-links ul-li-block clearfix">
+                                    <ul class="clearfix">
+                                        <li><a href="contact.html">colorshiftmx@gmail.com</a></li>
+                                        <li><a href="contact.html">+52 1 81 1527 1990</a></li>
+                                        <li><a href="contact.html">Nuevo León, México</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="useful-links ul-li-block clearfix">
+                            <ul class="clearfix">
+                                <li><a href="https://www.facebook.com/profile.php?id=61555855583611&locale=es_LA ">facebook</a></li>
+                                <li><a href="https://www.instagram.com/color.shiftmx/ ">instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+
+        <!-- Begin Scroll To Top -->
+        <a class="scroll-to-top style-3" href="">
+            <i class="icofont-arrow-up"></i>
+        </a>
+        <!-- Scroll To Top End Here -->
+
+    </div>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/parallax.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/tippy.min.js"></script>
+    <script src="assets/js/plugins/mailchimp-ajax.js"></script>
+    <script src="assets/js/plugins/one-page-nav.min.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
