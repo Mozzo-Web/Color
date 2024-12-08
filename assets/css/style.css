@@ -7071,7 +7071,6 @@ img {
   }
   .navbar-container li a{
     font-size: 8vh;
-    font-family: Satoshi;
     font-weight: bold;
     color: white;
   }
@@ -7110,7 +7109,6 @@ img {
   }
   .nav-options ul li a{
     font-size: var(--nav-font-size);
-    font-family: Satoshi;
     font-weight: bold;
     color: var(--h1-color);
   }
@@ -7139,7 +7137,6 @@ img {
   }
   .nav-register-button a{
     color: white;
-    font-family: Satoshi;
     font-weight: bold;
     font-size: var(--nav-font-size);
     padding: .7rem 1.3rem;
@@ -7162,7 +7159,6 @@ img {
   }
   h1{
     color: var(--h1-color);
-    font-family: Satoshi;
     font-size: var(--h1-size);
     font-weight: bold;
     margin: 0;
@@ -7170,7 +7166,6 @@ img {
   .sub-h1{
     margin-top: 1.5rem; 
     color: var(--subh1-color);
-    font-family: var(--subh1-font);
     font-size: var(--subh1-size);
     font-weight: bold;
   }
@@ -7191,7 +7186,6 @@ img {
   }
   .hero-button p{
     color: white;
-    font-family: Satoshi;
     font-weight: bold;
     font-size: var(--subh1-size);
     padding: 1rem 1.5rem;
@@ -7226,7 +7220,6 @@ img {
     margin-left: 5%;
   }
   .support-apps-section h2{
-    font-family: Satoshi;
     font-size: 2.3rem;
     color: var(--h1-color);
   }
@@ -7244,7 +7237,6 @@ img {
              -10px -10px 30px #ffffff;
   }
   .support-app-card-top{
-    font-family: Satoshi;
     font-size: 1rem;
     color: white;
     font-weight: bold;
